@@ -1,0 +1,89 @@
+@import "variables";
+
+.main-sidebar-container {
+  position: fixed;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  right: 0;
+  height: 100vh;
+  width: $main-sidebar-size;
+  flex-direction: column;
+  animation: sidebar $animation-move-time ease;
+}
+
+@keyframes sidebar {
+  from {
+    transform: translateX(30px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.main-sidebar-option {
+  border-radius: 50px;
+  padding: 0;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-color);
+  margin: 10px 30px;
+  transition: all ease $animation-time;
+  position: relative;
+
+  &.selected {
+    background-color: var(--primary-color);
+  }
+
+  &:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+
+    .main-sidebar-text {
+      opacity: 1;
+      right: 60px;
+    }
+
+    &.intro {
+      width: 140px;
+    }
+
+    &.about {
+      width: 155px;
+    }
+
+    &.certificate {
+      width: 170px;
+    }
+
+    &.research {
+      width: 190px;
+    }
+
+    &.education {
+      width: 185px;
+    }
+  }
+}
+
+.main-sidebar-svg {
+  position: absolute;
+  fill: var(--font-color);
+  width: 16px;
+  height: 16px;
+  right: 20px;
+}
+
+.main-sidebar-text {
+  position: absolute;
+  right: 20px;
+  width: 100px;
+  color: var(--font-color);
+  opacity: 0;
+  transition: all ease $animation-time;
+  display: flex;
+  justify-content: flex-end;
+}

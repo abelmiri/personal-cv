@@ -1,0 +1,99 @@
+@import "variables";
+
+.about-container {
+  animation: about $animation-move-time ease;
+  width: 100%;
+}
+
+@keyframes about {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-header {
+  width: 100%;
+  font-size: 50px;
+  padding: 70px 0;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+
+.about-header-back-text {
+  position: absolute;
+  top: 25px;
+  font-size: 100px;
+  opacity: .1;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: -5px;
+  z-index: -1;
+}
+
+.about-first-glance {
+  display: flex;
+  justify-content: center;
+}
+
+.about-first-glance-description {
+  width: 30%;
+  direction: rtl;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.about-first-glance-description-content {
+  display: flex;
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.about-first-glance-description-content-right {
+  flex-grow: 1;
+}
+
+.about-first-glance-description-content-left {
+  flex-grow: 1;
+}
+
+.about-first-glance-description-title {
+  color: gray;
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+.about-first-glance-description-value {
+  display: inline-block;
+}
+
+.about-first-glance-stats {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: right;
+}
+
+.about-first-glance-box {
+  width: 135px;
+  height: 125px;
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 5px;
+  font-size: 50px;
+  margin: 0 15px 15px 15px;
+  font-weight: bold;
+  color: var(--primary-color);
+  padding: 10px 40px;
+}
+
+.about-first-glance-box-title {
+  font-weight: normal;
+  font-size: 18px;
+  color: var(--font-color);
+}

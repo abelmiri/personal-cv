@@ -1,0 +1,127 @@
+@import "variables";
+
+.intro-container {
+  animation: intro $animation-move-time ease;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+@keyframes intro {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro-animated-background {
+  position: fixed;
+  z-index: -1;
+  width: 500px;
+  height: 200vh;
+  background-color: var(--primary-color);
+  top: -50vh;
+  left: -300px;
+  transform: rotate(-20deg) translateX(0);
+  animation: intro-background 40s ease 0s infinite;
+}
+
+@keyframes intro-background {
+  0% {
+    transform: rotate(-20deg) translateX(0);
+  }
+  50% {
+    transform: rotate(-10deg) translateX(50px);
+  }
+  100% {
+    transform: rotate(-20deg) translateX(0);
+  }
+}
+
+
+.intro-picture-container {
+  height: calc(100vh - 100px);
+  width: calc(40% - 100px);
+  margin: 50px;
+  object-fit: cover;
+  border-radius: 20px;
+  background-image: url("../Media/Image/model.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  //border: 2px solid var(--primary-color);
+  box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+}
+
+.intro-text-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.intro-content-wrapper {
+  text-align: right;
+  width: 500px;
+}
+
+.intro-text-bold {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.intro-text-name {
+  color: var(--primary-color);
+}
+
+.intro-text-description {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.intro-more-about-button {
+  padding: 10px;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+  text-align: center;
+  width: 170px;
+  font-size: 17px;
+  cursor: pointer;
+  transition-duration: $animation-time;
+  border: 1px solid var(--background-color);
+  color: var(--font-color);
+  position: relative;
+
+  &:hover {
+    border: 1px solid var(--primary-color);
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    padding-left: 40px;
+    width: 140px;
+
+    .intro-more-about-button-svg {
+      opacity: 1;
+      transform: translateX(-17px);
+    }
+  }
+}
+
+.intro-more-about-button-svg {
+  fill: var(--primary-color);
+  height: 17px;
+  width: 17px;
+  opacity: 0;
+  transition-duration: $animation-time;
+  position: absolute;
+  top: 17.5px;
+  left: 40px;
+}
