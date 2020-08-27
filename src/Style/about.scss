@@ -46,6 +46,54 @@
   direction: rtl;
   font-size: 24px;
   font-weight: bold;
+  position: relative;
+}
+
+.about-download-cv-button-container {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+}
+
+.about-download-cv-button {
+  padding: 10px;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+  text-align: center;
+  width: 180px;
+  font-size: 17px;
+  font-weight: normal;
+  cursor: pointer;
+  transition-duration: $animation-time;
+  border: 1px solid var(--background-color);
+  color: var(--font-color);
+  position: relative;
+  margin-top: 40px;
+  justify-self: flex-start;
+
+  &:hover {
+    border: 1px solid var(--primary-color);
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    padding-left: 40px;
+    width: 150px;
+
+    .about-download-cv-button-svg {
+      opacity: 1;
+      transform: translateX(-17px);
+    }
+  }
+}
+
+.about-download-cv-button-svg {
+  fill: var(--primary-color);
+  height: 17px;
+  width: 17px;
+  opacity: 0;
+  transition-duration: $animation-time;
+  position: absolute;
+  top: 15px;
+  left: 40px;
 }
 
 .about-first-glance-description-content {
@@ -55,11 +103,7 @@
   margin-top: 15px;
 }
 
-.about-first-glance-description-content-right {
-  flex-grow: 1;
-}
-
-.about-first-glance-description-content-left {
+.about-first-glance-description-content-side {
   flex-grow: 1;
 }
 
@@ -96,4 +140,142 @@
   font-weight: normal;
   font-size: 18px;
   color: var(--font-color);
+}
+
+// PIES
+.about-pies {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+}
+
+// -- mixins
+@mixin size($width, $height) {
+  height: $height;
+  width: $width;
+}
+
+@mixin draw-progress($progress, $color) {
+  .pie {
+    .half-circle {
+      border-color: $color;
+    }
+
+    .left-side {
+      transform: rotate($progress * 3.6deg);
+    }
+
+    @if $progress <= 50 {
+      .right-side {
+        display: none;
+      }
+    } @else {
+      clip: rect(auto, auto, auto, auto);
+
+      .right-side {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+@mixin draw-progress--solid($progress, $color, $bg-color) {
+  background: linear-gradient(to right, $color 50%, $bg-color 50%);
+
+  &:before {
+    @if $progress <= 50 {
+      background: $bg-color;
+      transform: rotate((100 - (50 - $progress)) / 100 * 360deg * -1);
+    } @else {
+      background: $color;
+      transform: rotate((100 - $progress) / 100 * 360deg);
+    }
+  }
+}
+
+// -- selectors
+
+.set-size {
+  font-size: 10em;
+}
+
+.charts-container {
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+.pie-wrapper {
+  @include size($default-size, $default-size);
+  float: left;
+  margin: 20px 65px;
+  position: relative;
+
+  &:nth-child(3n + 1) {
+    clear: both;
+  }
+
+  .pie {
+    @include size(100%, 100%);
+    clip: rect(0, $default-size, $default-size, $default-size / 2);
+    left: 0;
+    position: absolute;
+    top: 0;
+
+    .half-circle {
+      @include size(100%, 100%);
+      border: ($default-size / 10) solid #3498db;
+      border-radius: 50%;
+      clip: rect(0, $default-size / 2, $default-size, 0);
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  .label {
+    background: $bg-color;
+    border-radius: 50%;
+    bottom: $label-font-size-redo / 10;
+    color: #ecf0f1;
+    cursor: default;
+    display: block;
+    font-size: $label-font-size;
+    left: $label-font-size-redo / 10;
+    line-height: $label-font-size-redo * .70;
+    position: absolute;
+    right: $label-font-size-redo / 10;
+    text-align: center;
+    top: $label-font-size-redo / 10;
+
+    .smaller {
+      color: grey;
+      font-size: .45em;
+      padding-bottom: 20px;
+      vertical-align: super;
+    }
+  }
+
+  &.progress-90 {
+    @include draw-progress(90, var(--primary-color));
+  }
+}
+
+.pie-title {
+  position: absolute;
+  top: 9em;
+  font-size: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 25px;
 }

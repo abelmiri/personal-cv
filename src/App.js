@@ -2,6 +2,10 @@ import React, {PureComponent} from "react"
 import MainSideBar from "./View/Components/MainSideBar"
 import IntroPage from "./View/Pages/IntroPage"
 import AboutPage from "./View/Pages/AboutPage"
+import CertificatePage from "./View/Pages/CertificatePage"
+import ResearchPage from "./View/Pages/ResearchPage"
+import EducationPage from "./View/Pages/EducationPage"
+import WorkPage from "./View/Pages/WorkPage"
 
 class App extends PureComponent
 {
@@ -55,10 +59,30 @@ class App extends PureComponent
                             <AboutPage/>
                         </div>
                     }
-                    {/*{*/}
-                    {/*    selected === "certificate" &&*/}
-                    {/*    <div className="">B</div>*/}
-                    {/*}*/}
+                    {
+                        selected === "certificate" &&
+                        <div className="certificate-research-education-container">
+                            <CertificatePage/>
+                        </div>
+                    }
+                    {
+                        selected === "research" &&
+                        <div className="certificate-research-education-container">
+                            <ResearchPage/>
+                        </div>
+                    }
+                    {
+                        selected === "education" &&
+                        <div className="certificate-research-education-container">
+                            <EducationPage/>
+                        </div>
+                    }
+                    {
+                        selected === "work" &&
+                        <div className="certificate-research-education-container">
+                            <WorkPage/>
+                        </div>
+                    }
                 </div>
             )
         else return <div style={{textAlign: "center", padding: "20px", direction: "ltr"}}>Please Close Inspect Babe :)</div>

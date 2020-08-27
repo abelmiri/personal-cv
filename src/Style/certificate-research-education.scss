@@ -1,0 +1,145 @@
+@import "variables";
+
+.certificate-research-education-container {
+  animation: certificate $animation-move-time ease;
+  width: 100%;
+}
+
+@keyframes certificate {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.certificate-header {
+  width: 100%;
+  font-size: 50px;
+  padding: 70px 0;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+
+.certificate-header-back-text {
+  position: absolute;
+  top: 30px;
+  font-size: 90px;
+  opacity: .1;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: -5px;
+  z-index: -1;
+}
+
+.certificate-first-glance {
+  display: flex;
+  justify-content: center;
+}
+
+.certificate-first-glance-description {
+  width: 60%;
+  direction: rtl;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.certificate-contents {
+  display: flex;
+  font-weight: normal;
+  flex-wrap: wrap;
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.certificate-item-container {
+  width: 450px;
+  height: auto;
+  border-right: 1px solid rgba(255, 255, 255, .1);
+  flex-grow: 1;
+  padding: 0 40px;
+  position: relative;
+  transition-duration: $animation-time;
+  margin: 25px 0;
+
+  &:hover {
+    border-right: 1px solid rgba(255, 180, 0, .4);
+    cursor: pointer;
+
+    .certificate-item-svg-container {
+      background-color: var(--primary-color);
+    }
+
+    .certificate-item-svg {
+      fill: var(--font-color);
+    }
+
+    .certificate-item-title {
+      color: var(--primary-color);
+    }
+
+    .certificate-item-title-description {
+      color: var(--font-color);
+    }
+
+    .certificate-item-description {
+      color: lightgray;
+    }
+  }
+}
+
+.certificate-item-date {
+  padding: 2px 10px;
+  border-radius: 30px;
+  font-size: 13px;
+  color: var(--font-color);
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.certificate-item-title {
+  margin-top: 10px;
+  font-size: 18px;
+  color: var(--font-color);
+  transition-duration: $animation-time;
+}
+
+.certificate-item-title-description {
+  font-size: 17px;
+  color: darkgray;
+  transition-duration: $animation-time
+}
+
+.certificate-item-description {
+  font-size: 14px;
+  color: grey;
+  line-height: 27px;
+  margin-top: 10px;
+  text-align: justify;
+  transition-duration: $animation-time;
+}
+
+.certificate-item-svg-container {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--dark-color);
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: $animation-time;
+}
+
+.certificate-item-svg {
+  width: 15px;
+  height: 15px;
+  fill: var(--primary-color);
+  transition-duration: $animation-time;
+}

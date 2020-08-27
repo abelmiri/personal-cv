@@ -86,6 +86,7 @@
   text-align: justify;
   font-size: 18px;
   line-height: 35px;
+  margin-bottom: 30px;
 }
 
 .intro-more-about-button {
@@ -93,7 +94,7 @@
   border-radius: 30px;
   background-color: var(--primary-color);
   text-align: center;
-  width: 170px;
+  width: 185px;
   font-size: 17px;
   cursor: pointer;
   transition-duration: $animation-time;
@@ -106,7 +107,7 @@
     background-color: var(--background-color);
     color: var(--primary-color);
     padding-left: 40px;
-    width: 140px;
+    width: 155px;
 
     .intro-more-about-button-svg {
       opacity: 1;

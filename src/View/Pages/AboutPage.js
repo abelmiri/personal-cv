@@ -1,4 +1,5 @@
 import React, {PureComponent} from "react"
+import CvSvg from "../../Media/SVG/CvSvg"
 
 class AboutPage extends PureComponent
 {
@@ -12,7 +13,6 @@ class AboutPage extends PureComponent
 
     render()
     {
-        const {onSelect} = this.props
         return (
             <React.Fragment>
                 <div className="about-header">
@@ -51,7 +51,7 @@ class AboutPage extends PureComponent
                     <div className="about-first-glance-description">
                         <div>اطلاعات شخصی</div>
                         <div className="about-first-glance-description-content">
-                            <div className="about-first-glance-description-content-right">
+                            <div className="about-first-glance-description-content-side">
                                 <div className="about-first-glance-description-title">نام :&nbsp;</div>
                                 <div className="about-first-glance-description-value">احمد</div>
                                 <br/>
@@ -65,7 +65,7 @@ class AboutPage extends PureComponent
                                 <div className="about-first-glance-description-value">ایرانی</div>
                                 <br/>
                             </div>
-                            <div className="about-first-glance-description-content-left">
+                            <div className="about-first-glance-description-content-side">
                                 <div className="about-first-glance-description-title">آدرس :&nbsp;</div>
                                 <div className="about-first-glance-description-value">مشهد</div>
                                 <br/>
@@ -79,6 +79,76 @@ class AboutPage extends PureComponent
                                 <div className="about-first-glance-description-value">فارسی، انگلیسی</div>
                                 <br/>
                             </div>
+                        </div>
+                        <div className="about-download-cv-button-container">
+                            <div className="about-download-cv-button">
+                                دریافت فایل رزومه
+                                <CvSvg className="about-download-cv-button-svg"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="about-pies">
+                    <div className="set-size charts-container">
+                        <div className="pie-wrapper progress-90">
+                            <span className="label">90<span className="smaller">%</span></span>
+                            <div className="pie">
+                                <div className="left-side half-circle"/>
+                                <div className="right-side half-circle"/>
+                            </div>
+                            <div className="pie-title">عنوان</div>
+                        </div>
+                    </div>
+                    <div className="set-size charts-container">
+                        <div className="pie-wrapper progress-90">
+                            <span className="label">90<span className="smaller">%</span></span>
+                            <div className="pie">
+                                <div className="left-side half-circle"/>
+                                <div className="right-side half-circle"/>
+                            </div>
+                            <div className="pie-title">عنوان</div>
+                        </div>
+                    </div>
+                    <div className="set-size charts-container">
+                        <div className="pie-wrapper progress-90">
+                            <span className="label">90<span className="smaller">%</span></span>
+                            <div className="pie">
+                                <div className="left-side half-circle"/>
+                                <div className="right-side half-circle"/>
+                            </div>
+                            <div className="pie-title">عنوان</div>
+                        </div>
+                    </div>
+                </div>
+                <div className="about-pies">
+                    <div className="set-size charts-container">
+                        <div className="pie-wrapper progress-90">
+                            <span className="label">90<span className="smaller">%</span></span>
+                            <div className="pie">
+                                <div className="left-side half-circle"/>
+                                <div className="right-side half-circle"/>
+                            </div>
+                            <div className="pie-title">عنوان</div>
+                        </div>
+                    </div>
+                    <div className="set-size charts-container">
+                        <div className="pie-wrapper progress-90">
+                            <span className="label">90<span className="smaller">%</span></span>
+                            <div className="pie">
+                                <div className="left-side half-circle"/>
+                                <div className="right-side half-circle"/>
+                            </div>
+                            <div className="pie-title">عنوان</div>
+                        </div>
+                    </div>
+                    <div className="set-size charts-container">
+                        <div className="pie-wrapper progress-90">
+                            <span className="label">90<span className="smaller">%</span></span>
+                            <div className="pie">
+                                <div className="left-side half-circle"/>
+                                <div className="right-side half-circle"/>
+                            </div>
+                            <div className="pie-title">عنوان</div>
                         </div>
                     </div>
                 </div>

@@ -4,6 +4,7 @@ import UserSvg from "../../Media/SVG/UserSvg"
 import CertificateSvg from "../../Media/SVG/CertificateSvg"
 import ResearchSvg from "../../Media/SVG/ResearchSvg"
 import EducationSvg from "../../Media/SVG/EducationSvg"
+import WorkSvg from "../../Media/SVG/WorkSvg"
 
 class MainSideBar extends PureComponent
 {
@@ -40,6 +41,12 @@ class MainSideBar extends PureComponent
                     <EducationSvg className="main-sidebar-svg"/>
                     <div className="main-sidebar-text">
                         سوابق آموزشی
+                    </div>
+                </div>
+                <div className={`main-sidebar-option work ${selected === "work" && "selected"}`} onClick={() => onSelect("work")}>
+                    <WorkSvg className="main-sidebar-svg"/>
+                    <div className="main-sidebar-text">
+                        سوابق کاری
                     </div>
                 </div>
             </div>
