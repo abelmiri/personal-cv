@@ -5,6 +5,7 @@ import CertificateSvg from "../../Media/SVG/CertificateSvg"
 import ResearchSvg from "../../Media/SVG/ResearchSvg"
 import EducationSvg from "../../Media/SVG/EducationSvg"
 import WorkSvg from "../../Media/SVG/WorkSvg"
+import ContactSvg from "../../Media/SVG/ContactSvg"
 
 class MainSideBar extends PureComponent
 {
@@ -47,6 +48,12 @@ class MainSideBar extends PureComponent
                     <WorkSvg className="main-sidebar-svg"/>
                     <div className="main-sidebar-text">
                         سوابق کاری
+                    </div>
+                </div>
+                <div className={`main-sidebar-option contact ${selected === "contact" && "selected"}`} onClick={() => onSelect("contact")}>
+                    <ContactSvg className="main-sidebar-svg bigger"/>
+                    <div className="main-sidebar-text">
+                        تماس با من
                     </div>
                 </div>
             </div>

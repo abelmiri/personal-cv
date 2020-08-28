@@ -1,0 +1,231 @@
+@import "variables";
+
+.contact-container {
+  animation: contact $animation-move-time ease;
+  width: 100%;
+}
+
+@keyframes contact {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-header {
+  width: 100%;
+  font-size: 50px;
+  padding: 70px 0;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+
+.contact-header-back-text {
+  position: absolute;
+  top: 30px;
+  font-size: 90px;
+  opacity: .1;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: -5px;
+  z-index: -1;
+}
+
+.contact-body {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.contact-info {
+  width: 18%;
+  direction: rtl;
+  padding: 0 20px;
+}
+
+.contact-form {
+  width: 42%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-info-title {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact-info-description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: justify;
+}
+
+.contact-info-mail-phone-container {
+  margin-top: 30px;
+  display: flex;
+
+  &:hover {
+    .contact-info-mail-phone-text {
+      .title {
+        color: var(--font-color);
+      }
+
+      .content {
+        text-align: justify;
+        color: var(--primary-color);
+      }
+    }
+
+    .contact-info-mail-phone-svg {
+      background-color: white;
+    }
+  }
+}
+
+.contact-info-mail-phone-svg {
+  width: 45px;
+  height: 45px;
+  fill: var(--primary-color);
+  border-radius: 50%;
+  padding: 1px;
+  transition-duration: $animation-time;
+}
+
+.contact-info-mail-phone-text {
+  font-size: 14px;
+  padding: 0 15px;
+
+  .title {
+    color: grey;
+    transition-duration: $animation-time;
+  }
+
+  .content {
+    text-align: justify;
+    transition-duration: $animation-time;
+    color: var(--font-color);
+  }
+}
+
+.contact-info-detail-svg-wrapper {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: var(--dark-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: $animation-time;
+
+  &:hover {
+    background-color: var(--primary-color);
+  }
+}
+
+.contact-info-detail-svg {
+  height: 15px;
+  width: 15px;
+  fill: var(--font-color);
+
+  &.telegram {
+    padding-right: 2px;
+  }
+}
+
+.contact-info-svg-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.contact-input {
+  text-decoration: none;
+  border: 1px solid var(--dark-color);
+  border-radius: 30px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: var(--dark-color);
+  flex-grow: 1;
+  margin: 0 20px 35px 15px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--font-color);
+  transition-duration: $animation-time;
+
+  &:focus {
+    border: 1px solid var(--primary-color);
+  }
+}
+
+.contact-textarea {
+  text-decoration: none;
+  border: 1px solid var(--dark-color);
+  border-radius: 30px;
+  padding: 12px;
+  overflow: hidden;
+  background-color: var(--dark-color);
+  margin: 0 20px 30px 15px;
+  resize: vertical;
+  width: 100%;
+  transition-duration: $animation-time;
+  height: 220px;
+  text-align: right;
+  color: var(--font-color);
+  min-height: 26px;
+  max-height: 600px;
+
+  &:focus {
+    border: 1px solid var(--primary-color);
+  }
+}
+
+
+.contact-send-button {
+  padding: 10px;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+  text-align: center;
+  width: 150px;
+  font-size: 17px;
+  cursor: pointer;
+  transition-duration: $animation-time;
+  border: 1px solid var(--background-color);
+  color: var(--font-color);
+  position: relative;
+  justify-self: flex-end;
+  margin: 0 15px;
+
+  &:hover {
+    border: 1px solid var(--primary-color);
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    padding-left: 40px;
+    width: 120px;
+
+    .contact-send-button-svg {
+      opacity: 1;
+      transform: scaleX(-1) translateX(10px);
+    }
+  }
+}
+
+.contact-send-button-svg {
+  fill: var(--primary-color);
+  height: 17px;
+  width: 17px;
+  opacity: 0;
+  transition-duration: $animation-time;
+  position: absolute;
+  top: 16.5px;
+  left: 40px;
+  transform: scaleX(-1) translateX(0);
+}

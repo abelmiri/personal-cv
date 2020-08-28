@@ -70,6 +70,10 @@
     &.work {
       width: 170px;
     }
+
+    &.contact {
+      width: 175px;
+    }
   }
 }
 
@@ -79,6 +83,12 @@
   width: 16px;
   height: 16px;
   right: 20px;
+
+  &.bigger {
+    width: 19px;
+    height: 19px;
+    right: 18px;
+  }
 }
 
 .main-sidebar-text {

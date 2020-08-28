@@ -6,6 +6,7 @@ import CertificatePage from "./View/Pages/CertificatePage"
 import ResearchPage from "./View/Pages/ResearchPage"
 import EducationPage from "./View/Pages/EducationPage"
 import WorkPage from "./View/Pages/WorkPage"
+import ContactPage from "./View/Pages/ContactPage"
 
 class App extends PureComponent
 {
@@ -14,7 +15,7 @@ class App extends PureComponent
         super(props)
         this.state = {
             lang: "fa",
-            selected: "intro",
+            selected: "contact",
             devtoolsOpen: false,
         }
     }
@@ -81,6 +82,12 @@ class App extends PureComponent
                         selected === "work" &&
                         <div className="certificate-research-education-container">
                             <WorkPage/>
+                        </div>
+                    }
+                    {
+                        selected === "contact" &&
+                        <div className="contact-container">
+                            <ContactPage/>
                         </div>
                     }
                 </div>
