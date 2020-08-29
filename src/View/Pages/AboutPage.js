@@ -88,70 +88,80 @@ class AboutPage extends PureComponent
                         </div>
                     </div>
                 </div>
-                <div className="about-pies">
-                    <div className="set-size charts-container">
-                        <div className="pie-wrapper progress-90">
-                            <span className="label">90<span className="smaller">%</span></span>
-                            <div className="pie">
-                                <div className="left-side half-circle"/>
-                                <div className="right-side half-circle"/>
-                            </div>
-                            <div className="pie-title">عنوان</div>
+                <div className="about-separator-container">
+                    <div className="about-separator"/>
+                </div>
+                <div className="about-skills-container">
+                    <div>مهارت ها</div>
+                    <div className="about-skills">
+                        <div className="about-skill-item">
+                            <div className="about-skill-item-bar _100"/>
+                            <div className="about-skill-item-title">مدیریت پروژه - Scrum, CMMI, Agile, Team Foundation Server, GIT</div>
+                        </div>
+                        <div className="about-skill-item">
+                            <div className="about-skill-item-bar _100"/>
+                            <div className="about-skill-item-title">برنامه نویسی وب - ASP.NET MVC, ASP CORE, Entity Framework, AJAX</div>
+                        </div>
+                        <div className="about-skill-item">
+                            <div className="about-skill-item-bar _100"/>
+                            <div className="about-skill-item-title">طراحی وب - HTML5, CSS3, JS, JQuery, Angular, Node, React, Meteor, TypeScript</div>
+                        </div>
+                        <div className="about-skill-item">
+                            <div className="about-skill-item-bar _80"/>
+                            <div className="about-skill-item-title">برنامه نویسی ویندوز- C, C++, C#.NET/VB.NET, Object Oriented, Socket, Shell</div>
+                        </div>
+                        <div className="about-skill-item">
+                            <div className="about-skill-item-bar _80"/>
+                            <div className="about-skill-item-title">بانک های اطلاعاتی - MS SQL, MS Access, MySQL</div>
+                        </div>
+                        <div className="about-skill-item">
+                            <div className="about-skill-item-bar _60"/>
+                            <div className="about-skill-item-title">سیستم های عامل - MS Windows, LINUX</div>
                         </div>
                     </div>
-                    <div className="set-size charts-container">
-                        <div className="pie-wrapper progress-90">
-                            <span className="label">90<span className="smaller">%</span></span>
-                            <div className="pie">
-                                <div className="left-side half-circle"/>
-                                <div className="right-side half-circle"/>
-                            </div>
-                            <div className="pie-title">عنوان</div>
+                    <div className="about-skill-title">زبان انگلیسی</div>
+                    <div className="about-skills">
+                        <div className="about-skill-item">
+                            <div className="about-skill-item-bar _80"/>
+                            <div className="about-skill-item-title">مهارت خواندن</div>
+                        </div>
+                        <div className="about-skill-item">
+                            <div className="about-skill-item-bar _80"/>
+                            <div className="about-skill-item-title">مهارت نوشتن</div>
+                        </div>
+                        <div className="about-skill-item">
+                            <div className="about-skill-item-bar _80"/>
+                            <div className="about-skill-item-title">مهارت شنیداری</div>
+                        </div>
+                        <div className="about-skill-item">
+                            <div className="about-skill-item-bar _80"/>
+                            <div className="about-skill-item-title">مهارت گفتاری</div>
                         </div>
                     </div>
-                    <div className="set-size charts-container">
-                        <div className="pie-wrapper progress-90">
-                            <span className="label">90<span className="smaller">%</span></span>
-                            <div className="pie">
-                                <div className="left-side half-circle"/>
-                                <div className="right-side half-circle"/>
-                            </div>
-                            <div className="pie-title">عنوان</div>
+                    <div className="about-skill-title">زبان عربی</div>
+                    <div className="about-skills">
+                        <div className="about-skill-item">
+                            <div className="about-skill-item-bar _60"/>
+                            <div className="about-skill-item-title">مهارت خواندن</div>
+                        </div>
+                        <div className="about-skill-item">
+                            <div className="about-skill-item-bar _20"/>
+                            <div className="about-skill-item-title">مهارت نوشتن</div>
+                        </div>
+                        <div className="about-skill-item">
+                            <div className="about-skill-item-bar _20"/>
+                            <div className="about-skill-item-title">مهارت شنیداری</div>
+                        </div>
+                        <div className="about-skill-item">
+                            <div className="about-skill-item-bar _20"/>
+                            <div className="about-skill-item-title">مهارت گفتاری</div>
                         </div>
                     </div>
                 </div>
-                <div className="about-pies">
-                    <div className="set-size charts-container">
-                        <div className="pie-wrapper progress-90">
-                            <span className="label">90<span className="smaller">%</span></span>
-                            <div className="pie">
-                                <div className="left-side half-circle"/>
-                                <div className="right-side half-circle"/>
-                            </div>
-                            <div className="pie-title">عنوان</div>
-                        </div>
-                    </div>
-                    <div className="set-size charts-container">
-                        <div className="pie-wrapper progress-90">
-                            <span className="label">90<span className="smaller">%</span></span>
-                            <div className="pie">
-                                <div className="left-side half-circle"/>
-                                <div className="right-side half-circle"/>
-                            </div>
-                            <div className="pie-title">عنوان</div>
-                        </div>
-                    </div>
-                    <div className="set-size charts-container">
-                        <div className="pie-wrapper progress-90">
-                            <span className="label">90<span className="smaller">%</span></span>
-                            <div className="pie">
-                                <div className="left-side half-circle"/>
-                                <div className="right-side half-circle"/>
-                            </div>
-                            <div className="pie-title">عنوان</div>
-                        </div>
-                    </div>
+                <div className="about-separator-container">
+                    <div className="about-separator"/>
                 </div>
+
             </React.Fragment>
         )
     }

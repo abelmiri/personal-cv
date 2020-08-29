@@ -25,7 +25,7 @@ class EducationPage extends PureComponent
                     <div className="certificate-first-glance-description">
                         <div>سوابق تدریس</div>
                         <div className="certificate-contents">
-                            <div className="certificate-item-container">
+                            <div className="research-item-container">
                                 <div className="certificate-item-svg-container">
                                     <EducationSvg className="certificate-item-svg"/>
                                 </div>
@@ -39,7 +39,7 @@ class EducationPage extends PureComponent
                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
                                 </div>
                             </div>
-                            <div className="certificate-item-container">
+                            <div className="research-item-container">
                                 <div className="certificate-item-svg-container">
                                     <EducationSvg className="certificate-item-svg"/>
                                 </div>
@@ -53,7 +53,7 @@ class EducationPage extends PureComponent
                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
                                 </div>
                             </div>
-                            <div className="certificate-item-container">
+                            <div className="research-item-container">
                                 <div className="certificate-item-svg-container">
                                     <EducationSvg className="certificate-item-svg"/>
                                 </div>
@@ -67,7 +67,7 @@ class EducationPage extends PureComponent
                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
                                 </div>
                             </div>
-                            <div className="certificate-item-container">
+                            <div className="research-item-container">
                                 <div className="certificate-item-svg-container">
                                     <EducationSvg className="certificate-item-svg"/>
                                 </div>
@@ -81,7 +81,7 @@ class EducationPage extends PureComponent
                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
                                 </div>
                             </div>
-                            <div className="certificate-item-container">
+                            <div className="research-item-container">
                                 <div className="certificate-item-svg-container">
                                     <EducationSvg className="certificate-item-svg"/>
                                 </div>
@@ -95,7 +95,7 @@ class EducationPage extends PureComponent
                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
                                 </div>
                             </div>
-                            <div className="certificate-item-container">
+                            <div className="research-item-container">
                                 <div className="certificate-item-svg-container">
                                     <EducationSvg className="certificate-item-svg"/>
                                 </div>

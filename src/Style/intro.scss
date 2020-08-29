@@ -1,10 +1,17 @@
 @import "variables";
 
 .intro-container {
-  animation: intro $animation-move-time ease;
   width: 100%;
   overflow: hidden;
   display: flex;
+
+  &.is-next {
+    animation: intro $animation-move-time ease;
+  }
+
+  &.is-previous {
+    animation: intro-is-previous $animation-move-time ease;
+  }
 }
 
 @keyframes intro {
@@ -14,6 +21,15 @@
   }
   to {
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes intro-is-previous {
+  from {
+    transform: translateY(-1000px);
+  }
+  to {
     transform: translateY(0);
   }
 }
@@ -35,7 +51,7 @@
     transform: rotate(-20deg) translateX(0);
   }
   50% {
-    transform: rotate(-10deg) translateX(50px);
+    transform: rotate(-20deg) translateX(50px);
   }
   100% {
     transform: rotate(-20deg) translateX(0);
@@ -92,26 +108,26 @@
 .intro-more-about-button {
   padding: 10px;
   border-radius: 30px;
-  background-color: var(--primary-color);
+  background-color: var(--background-color);
   text-align: center;
   width: 185px;
   font-size: 17px;
   cursor: pointer;
   transition-duration: $animation-time;
-  border: 1px solid var(--background-color);
-  color: var(--font-color);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
   position: relative;
 
   &:hover {
-    border: 1px solid var(--primary-color);
-    background-color: var(--background-color);
-    color: var(--primary-color);
-    padding-left: 40px;
-    width: 155px;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    padding-left: 45px;
+    width: 150px;
 
     .intro-more-about-button-svg {
       opacity: 1;
       transform: translateX(-17px);
+      fill: var(--font-color);
     }
   }
 }
@@ -123,6 +139,91 @@
   opacity: 0;
   transition-duration: $animation-time;
   position: absolute;
-  top: 17.5px;
-  left: 40px;
+  top: 16px;
+  left: 45px;
+}
+
+.intro-top-buttons-container {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+}
+
+.intro-bottom-buttons-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+
+.intro-info-detail-svg-wrapper {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: $animation-time;
+  border: 1px solid var(--primary-color);
+
+  &:hover {
+    background-color: var(--primary-color);
+
+    .intro-info-detail-svg {
+      fill: var(--font-color);
+    }
+  }
+}
+
+.intro-info-detail-svg {
+  height: 17px;
+  width: 17px;
+  fill: var(--primary-color);
+  transition-duration: $animation-time;
+
+  &.telegram {
+    padding-right: 2px;
+  }
+}
+
+.intro-side-bar-button {
+  padding: 7px 30px;
+  border-radius: 30px;
+  background-color: var(--background-color);
+  text-align: center;
+  width: auto;
+  font-size: 14px;
+  cursor: pointer;
+  transition-duration: $animation-time;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  position: relative;
+  flex-grow: 1;
+  margin: 8px;
+
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    padding-right: 17px;
+    padding-left: 43px;
+
+    .intro-side-bar-button-svg {
+      fill: var(--font-color);
+      opacity: 1;
+      left: 14%;
+    }
+  }
+}
+
+.intro-side-bar-button-svg {
+  fill: var(--primary-color);
+  height: 14px;
+  width: 14px;
+  opacity: 0;
+  transition-duration: $animation-time;
+  position: absolute;
+  top: 15px;
+  left: 25%;
 }

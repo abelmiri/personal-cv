@@ -1,10 +1,8 @@
 $main-sidebar-size: 120px;
 $animation-time: .25s;
-$animation-move-time: .55s;
+$animation-move-time: .5s;
+$animation-bar-time: 1s;
 $bg-color: #111111;
-$default-size: 1em;
-$label-font-size: $default-size / 4;
-$label-font-size-redo: $default-size * 4;
 :root {
   --primary-color: #ffb400;
   --background-color: #111111;

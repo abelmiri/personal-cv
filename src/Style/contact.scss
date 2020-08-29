@@ -1,17 +1,32 @@
 @import "variables";
 
 .contact-container {
-  animation: contact $animation-move-time ease;
   width: 100%;
+
+  &.is-next {
+    animation: contact-is-next $animation-move-time ease;
+  }
+
+  &.is-previous {
+    animation: contact-is-previous $animation-move-time ease;
+  }
 }
 
-@keyframes contact {
+
+@keyframes contact-is-next {
   from {
-    opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(1000px);
   }
   to {
-    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes contact-is-previous {
+  from {
+    transform: translateY(-1000px);
+  }
+  to {
     transform: translateY(0);
   }
 }
@@ -52,6 +67,8 @@
   width: 42%;
   display: flex;
   flex-wrap: wrap;
+  height: 50px;
+  overflow: visible;
 }
 
 .contact-info-title {
@@ -151,13 +168,13 @@
   text-decoration: none;
   border: 1px solid var(--dark-color);
   border-radius: 30px;
-  padding: 10px;
+  padding: 10px 0;
   overflow: hidden;
   background-color: var(--dark-color);
   flex-grow: 1;
-  margin: 0 20px 35px 15px;
+  margin: 0 10px 35px 5px;
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
   color: var(--font-color);
   transition-duration: $animation-time;
 
@@ -173,12 +190,13 @@
   padding: 12px;
   overflow: hidden;
   background-color: var(--dark-color);
-  margin: 0 20px 30px 15px;
+  margin: 0 10px 30px 5px;
   resize: vertical;
   width: 100%;
   transition-duration: $animation-time;
   height: 220px;
   text-align: right;
+  font-size: 14px;
   color: var(--font-color);
   min-height: 26px;
   max-height: 600px;
@@ -187,7 +205,6 @@
     border: 1px solid var(--primary-color);
   }
 }
-
 
 .contact-send-button {
   padding: 10px;
@@ -202,7 +219,7 @@
   color: var(--font-color);
   position: relative;
   justify-self: flex-end;
-  margin: 0 15px;
+  margin: 0 5px;
 
   &:hover {
     border: 1px solid var(--primary-color);
@@ -229,3 +246,18 @@
   left: 40px;
   transform: scaleX(-1) translateX(0);
 }
+
+
+@media (max-width: 1300px) {
+  .contact-textarea {
+    height: 195px;
+  }
+}
+
+
+@media (min-width: 1300px) and (max-width: 1600px) {
+  .contact-textarea {
+    height: 245px;
+  }
+}
+

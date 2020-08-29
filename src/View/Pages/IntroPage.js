@@ -14,12 +14,12 @@ class IntroPage extends PureComponent
 
     render()
     {
-        const {onSelect} = this.props
+        const {onSelect, OnHover} = this.props
         return (
             <React.Fragment>
                 <div className="intro-animated-background"/>
                 <IntroPicture/>
-                <IntroText onSelect={(selected) => onSelect(selected)}/>
+                <IntroText onSelect={(selected) => onSelect(selected)} OnHover={(selected) => OnHover(selected)}/>
             </React.Fragment>
         )
     }

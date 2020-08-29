@@ -1,17 +1,31 @@
 @import "variables";
 
 .about-container {
-  animation: about $animation-move-time ease;
   width: 100%;
+
+  &.is-next {
+    animation: about-is-next $animation-move-time ease;
+  }
+
+  &.is-previous {
+    animation: about-is-previous $animation-move-time ease;
+  }
 }
 
-@keyframes about {
+@keyframes about-is-next {
   from {
-    opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(1000px);
   }
   to {
-    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes about-is-previous {
+  from {
+    transform: translateY(-1000px);
+  }
+  to {
     transform: translateY(0);
   }
 }
@@ -65,10 +79,9 @@
   font-weight: normal;
   cursor: pointer;
   transition-duration: $animation-time;
-  border: 1px solid var(--background-color);
+  border: 1px solid var(--primary-color);
   color: var(--font-color);
   position: relative;
-  margin-top: 40px;
   justify-self: flex-start;
 
   &:hover {
@@ -92,7 +105,7 @@
   opacity: 0;
   transition-duration: $animation-time;
   position: absolute;
-  top: 15px;
+  top: 16px;
   left: 40px;
 }
 
@@ -142,140 +155,158 @@
   color: var(--font-color);
 }
 
-// PIES
-.about-pies {
+.about-separator-container {
   display: flex;
-  width: 100%;
-  align-items: center;
   justify-content: center;
-  margin-top: 50px;
-
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-  }
+  margin-top: 70px;
+  margin-bottom: 20px;
 }
 
-// -- mixins
-@mixin size($width, $height) {
-  height: $height;
-  width: $width;
+.about-separator {
+  width: 25%;
+  background-color: rgba(255, 255, 255, .15);
+  height: 1px;
 }
 
-@mixin draw-progress($progress, $color) {
-  .pie {
-    .half-circle {
-      border-color: $color;
-    }
-
-    .left-side {
-      transform: rotate($progress * 3.6deg);
-    }
-
-    @if $progress <= 50 {
-      .right-side {
-        display: none;
-      }
-    } @else {
-      clip: rect(auto, auto, auto, auto);
-
-      .right-side {
-        transform: rotate(180deg);
-      }
-    }
-  }
+.about-skills-container {
+  width: 70%;
+  direction: rtl;
+  font-size: 24px;
+  font-weight: bold;
+  margin: auto;
 }
 
-@mixin draw-progress--solid($progress, $color, $bg-color) {
-  background: linear-gradient(to right, $color 50%, $bg-color 50%);
-
-  &:before {
-    @if $progress <= 50 {
-      background: $bg-color;
-      transform: rotate((100 - (50 - $progress)) / 100 * 360deg * -1);
-    } @else {
-      background: $color;
-      transform: rotate((100 - $progress) / 100 * 360deg);
-    }
-  }
-}
-
-// -- selectors
-
-.set-size {
-  font-size: 10em;
-}
-
-.charts-container {
-  &:after {
-    clear: both;
-    content: '';
-    display: table;
-  }
-}
-
-.pie-wrapper {
-  @include size($default-size, $default-size);
-  float: left;
-  margin: 20px 65px;
-  position: relative;
-
-  &:nth-child(3n + 1) {
-    clear: both;
-  }
-
-  .pie {
-    @include size(100%, 100%);
-    clip: rect(0, $default-size, $default-size, $default-size / 2);
-    left: 0;
-    position: absolute;
-    top: 0;
-
-    .half-circle {
-      @include size(100%, 100%);
-      border: ($default-size / 10) solid #3498db;
-      border-radius: 50%;
-      clip: rect(0, $default-size / 2, $default-size, 0);
-      left: 0;
-      position: absolute;
-      top: 0;
-    }
-  }
-
-  .label {
-    background: $bg-color;
-    border-radius: 50%;
-    bottom: $label-font-size-redo / 10;
-    color: #ecf0f1;
-    cursor: default;
-    display: block;
-    font-size: $label-font-size;
-    left: $label-font-size-redo / 10;
-    line-height: $label-font-size-redo * .70;
-    position: absolute;
-    right: $label-font-size-redo / 10;
-    text-align: center;
-    top: $label-font-size-redo / 10;
-
-    .smaller {
-      color: grey;
-      font-size: .45em;
-      padding-bottom: 20px;
-      vertical-align: super;
-    }
-  }
-
-  &.progress-90 {
-    @include draw-progress(90, var(--primary-color));
-  }
-}
-
-.pie-title {
-  position: absolute;
-  top: 9em;
+.about-skill-title {
+  margin-top: 30px;
+  font-weight: normal;
   font-size: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 25px;
+}
+
+.about-lang-skills-container {
+  width: 70%;
+  direction: rtl;
+  font-size: 24px;
+  font-weight: bold;
+  margin: auto auto 50px auto;
+}
+
+.about-skills {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: normal;
+  margin: auto;
+}
+
+.about-skill-item {
+  height: 22px;
+  background-color: var(--dark-color);
+  position: relative;
+  border-radius: 30px;
+  margin-top: 55px;
+}
+
+@media (max-width: 1300px) {
+  .about-skill-item {
+    width: 100%;
+    margin-top: 55px;
+  }
+}
+
+
+@media (min-width: 1300px) and (max-width: 1600px) {
+  .about-skill-item {
+    width: 420px;
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1840px) {
+  .about-skill-item {
+    width: 500px;
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 1840px) and (max-width: 4096px) {
+  .about-skill-item {
+    width: 600px;
+  }
+}
+
+.about-skill-item-title {
+  width: auto;
+  text-align: justify;
+  position: absolute;
+  bottom: 35px;
+  right: 0;
+  color: var(--font-color);
+  padding: 0 2px;
+}
+
+.about-skill-item-bar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 22px;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+
+  &._100 {
+    animation: _100animation $animation-bar-time ease;
+    width: 100%;
+  }
+
+  &._80 {
+    animation: _80animation $animation-bar-time ease;
+    width: 80%;
+  }
+
+  &._60 {
+    animation: _60animation $animation-bar-time ease;
+    width: 60%;
+  }
+
+  &._20 {
+    animation: _20animation $animation-bar-time ease;
+    width: 20%;
+  }
+}
+
+@keyframes _100animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes _80animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes _60animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes _20animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20%;
+  }
 }

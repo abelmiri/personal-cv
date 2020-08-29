@@ -38,6 +38,48 @@
     background-color: var(--primary-color);
   }
 
+  &.hovered {
+    background-color: var(--primary-color);
+    cursor: pointer;
+
+    .main-sidebar-text {
+      opacity: 1;
+      right: 60px;
+    }
+
+    &.intro {
+      width: 140px;
+    }
+
+    &.about {
+      width: 155px;
+    }
+
+    &.certificate {
+      width: 170px;
+    }
+
+    &.research {
+      width: 190px;
+    }
+
+    &.education {
+      width: 185px;
+    }
+
+    &.work {
+      width: 175px;
+    }
+
+    &.gallery {
+      width: 175px;
+    }
+
+    &.contact {
+      width: 175px;
+    }
+  }
+
   &:hover {
     background-color: var(--primary-color);
     cursor: pointer;
@@ -68,7 +110,11 @@
     }
 
     &.work {
-      width: 170px;
+      width: 175px;
+    }
+
+    &.gallery {
+      width: 175px;
     }
 
     &.contact {

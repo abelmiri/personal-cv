@@ -1,17 +1,31 @@
 @import "variables";
 
 .certificate-research-education-container {
-  animation: certificate $animation-move-time ease;
   width: 100%;
+
+  &.is-next {
+    animation: certificate-is-next $animation-move-time ease;
+  }
+
+  &.is-previous {
+    animation: certificate-is-previous $animation-move-time ease;
+  }
 }
 
-@keyframes certificate {
+@keyframes certificate-is-next {
   from {
-    opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(1000px);
   }
   to {
-    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes certificate-is-previous {
+  from {
+    transform: translateY(-1000px);
+  }
+  to {
     transform: translateY(0);
   }
 }
@@ -53,11 +67,51 @@
   font-weight: normal;
   flex-wrap: wrap;
   font-size: 18px;
-  margin: 15px 0;
+  margin: 5px 0;
 }
 
 .certificate-item-container {
-  width: 450px;
+  width: 220px;
+  height: auto;
+  border-right: 1px solid rgba(255, 255, 255, .1);
+  flex-grow: 1;
+  padding: 0 40px;
+  position: relative;
+  transition-duration: $animation-time;
+  margin: 55px 0;
+
+  &:hover {
+    border-right: 1px solid rgba(255, 180, 0, .4);
+    cursor: pointer;
+
+    .certificate-item-svg-container {
+      background-color: var(--primary-color);
+    }
+
+    .certificate-item-svg {
+      fill: var(--font-color);
+    }
+
+    .certificate-item-title {
+      color: var(--primary-color);
+    }
+
+    .certificate-item-title-description {
+      color: var(--font-color);
+    }
+
+    .certificate-item-description {
+      color: lightgray;
+    }
+
+    .certificate-gpa-date-container {
+      color: var(--primary-color);
+    }
+  }
+}
+
+.research-item-container {
+  width: 400px;
   height: auto;
   border-right: 1px solid rgba(255, 255, 255, .1);
   flex-grow: 1;
@@ -89,15 +143,26 @@
     .certificate-item-description {
       color: lightgray;
     }
+
+    .certificate-gpa-date-container {
+      color: var(--primary-color);
+    }
   }
+}
+
+.certificate-gpa-date-container {
+  display: flex;
+  justify-content: flex-start;
+  color: var(--font-color);
+  transition-duration: $animation-time;
 }
 
 .certificate-item-date {
   padding: 2px 10px;
   border-radius: 30px;
   font-size: 13px;
-  color: var(--font-color);
   background-color: rgba(255, 255, 255, .1);
+  margin-left: 10px;
 }
 
 .certificate-item-title {
@@ -108,6 +173,7 @@
 }
 
 .certificate-item-title-description {
+  margin-top: 10px;
   font-size: 17px;
   color: darkgray;
   transition-duration: $animation-time

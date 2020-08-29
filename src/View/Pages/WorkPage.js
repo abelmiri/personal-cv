@@ -16,7 +16,7 @@ class WorkPage extends PureComponent
         return (
             <React.Fragment>
                 <div className="certificate-header">
-                    سوابق<span className="intro-text-name"> کاری </span>
+                    سوابق<span className="intro-text-name"> اجرایی </span>
                     <div className="certificate-header-back-text">
                         مستندات شغلی
                     </div>
@@ -25,7 +25,7 @@ class WorkPage extends PureComponent
                     <div className="certificate-first-glance-description">
                         <div>سوابق شغلی</div>
                         <div className="certificate-contents">
-                            <div className="certificate-item-container">
+                            <div className="research-item-container">
                                 <div className="certificate-item-svg-container">
                                     <WorkSvg className="certificate-item-svg"/>
                                 </div>
@@ -39,7 +39,7 @@ class WorkPage extends PureComponent
                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
                                 </div>
                             </div>
-                            <div className="certificate-item-container">
+                            <div className="research-item-container">
                                 <div className="certificate-item-svg-container">
                                     <WorkSvg className="certificate-item-svg"/>
                                 </div>
@@ -53,7 +53,7 @@ class WorkPage extends PureComponent
                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
                                 </div>
                             </div>
-                            <div className="certificate-item-container">
+                            <div className="research-item-container">
                                 <div className="certificate-item-svg-container">
                                     <WorkSvg className="certificate-item-svg"/>
                                 </div>
@@ -67,7 +67,7 @@ class WorkPage extends PureComponent
                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
                                 </div>
                             </div>
-                            <div className="certificate-item-container">
+                            <div className="research-item-container">
                                 <div className="certificate-item-svg-container">
                                     <WorkSvg className="certificate-item-svg"/>
                                 </div>
@@ -81,7 +81,7 @@ class WorkPage extends PureComponent
                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
                                 </div>
                             </div>
-                            <div className="certificate-item-container">
+                            <div className="research-item-container">
                                 <div className="certificate-item-svg-container">
                                     <WorkSvg className="certificate-item-svg"/>
                                 </div>
@@ -95,7 +95,7 @@ class WorkPage extends PureComponent
                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
                                 </div>
                             </div>
-                            <div className="certificate-item-container">
+                            <div className="research-item-container">
                                 <div className="certificate-item-svg-container">
                                     <WorkSvg className="certificate-item-svg"/>
                                 </div>
