@@ -53,6 +53,7 @@
 .about-first-glance {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .about-first-glance-description {
@@ -83,6 +84,7 @@
   color: var(--font-color);
   position: relative;
   justify-self: flex-start;
+  max-height: 30px;
 
   &:hover {
     border: 1px solid var(--primary-color);
@@ -131,10 +133,11 @@
 }
 
 .about-first-glance-stats {
-  width: 40%;
+  width: 35%;
   display: flex;
   flex-wrap: wrap;
   text-align: right;
+  justify-content: space-evenly;
 }
 
 .about-first-glance-box {
@@ -143,7 +146,7 @@
   border: 1px solid rgba(255, 255, 255, .1);
   border-radius: 5px;
   font-size: 50px;
-  margin: 0 15px 15px 15px;
+  margin: 0 15px 30px 15px;
   font-weight: bold;
   color: var(--primary-color);
   padding: 10px 40px;
@@ -267,11 +270,6 @@
   &._60 {
     animation: _60animation $animation-bar-time ease;
     width: 60%;
-  }
-
-  &._20 {
-    animation: _20animation $animation-bar-time ease;
-    width: 20%;
   }
 }
 

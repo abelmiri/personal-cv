@@ -189,38 +189,38 @@
 }
 
 .intro-side-bar-button {
-  padding: 7px 30px;
+  padding: 7px 17px;
   border-radius: 30px;
   background-color: var(--background-color);
   text-align: center;
   width: auto;
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
   transition-duration: $animation-time;
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
   position: relative;
   flex-grow: 1;
-  margin: 8px;
+  margin: 7px;
 
   &:hover {
     background-color: var(--primary-color);
     color: var(--font-color);
-    padding-right: 17px;
-    padding-left: 43px;
+    padding-right: 5px;
+    padding-left: 29px;
 
     .intro-side-bar-button-svg {
       fill: var(--font-color);
       opacity: 1;
-      left: 14%;
+      left: 13.5%;
     }
   }
 }
 
 .intro-side-bar-button-svg {
   fill: var(--primary-color);
-  height: 14px;
-  width: 14px;
+  height: 13px;
+  width: 13px;
   opacity: 0;
   transition-duration: $animation-time;
   position: absolute;

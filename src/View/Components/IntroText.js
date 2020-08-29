@@ -25,16 +25,12 @@ const IntroText = (props) =>
                     هستم
                 </span>
                 <p className="intro-text-description">کارشناس فناوری اطلاعات استانداری، مشاور و مدیر پروژه های تجاری و نرم افزاری، مدرس دروس تخصصی، برنامه نویسی و وب</p>
-                <div className="intro-top-buttons-container">
-                    <div className="intro-more-about-button" onClick={() => onSelect("about")} onMouseOver={() => OnHover("about")} onMouseLeave={() => OnHover("")}>
-                        بیشتر درباره من
-                        <UserSvg className="intro-more-about-button-svg"/>
-                    </div>
-                    <div className="about-download-cv-button">
-                        دریافت فایل رزومه
-                        <CvSvg className="about-download-cv-button-svg"/>
-                    </div>
-                </div>
+                {/*<div className="intro-top-buttons-container">*/}
+                {/*    <div className="intro-more-about-button" onClick={() => onSelect("about")} onMouseOver={() => OnHover("about")} onMouseLeave={() => OnHover("")}>*/}
+                {/*        بیشتر درباره من*/}
+                {/*        <UserSvg className="intro-more-about-button-svg"/>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
                 <div className="contact-info-svg-container">
                     <a href="https://telegram.me/AhmadJanatiFard" className="intro-info-detail-svg-wrapper">
                         <TelegramSvg className="intro-info-detail-svg telegram"/>
@@ -42,6 +38,10 @@ const IntroText = (props) =>
                     <a href="https://www.instagram.com/AhmadJanatiFard" className="intro-info-detail-svg-wrapper">
                         <InstagramSvg className="intro-info-detail-svg"/>
                     </a>
+                    <div className="about-download-cv-button">
+                        دریافت فایل رزومه
+                        <CvSvg className="about-download-cv-button-svg"/>
+                    </div>
                     <a href="https://www.linkedin.com/in/Ahmad-Janati-Fard" className="intro-info-detail-svg-wrapper">
                         <LinkedinSvg className="intro-info-detail-svg"/>
                     </a>
@@ -50,6 +50,10 @@ const IntroText = (props) =>
                     </a>
                 </div>
                 <div className="intro-bottom-buttons-container">
+                    <div className="intro-side-bar-button" onClick={() => onSelect("about")} onMouseOver={() => OnHover("about")} onMouseLeave={() => OnHover("")}>
+                        درباره من
+                        <UserSvg className="intro-side-bar-button-svg"/>
+                    </div>
                     <div className="intro-side-bar-button" onClick={() => onSelect("certificate")} onMouseOver={() => OnHover("certificate")} onMouseLeave={() => OnHover("")}>
                         مدارک علمی
                         <CertificateSvg className="intro-side-bar-button-svg"/>

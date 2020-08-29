@@ -31,14 +31,14 @@ class ResearchPage extends PureComponent
                                     <ResearchSvg className="certificate-item-svg"/>
                                 </div>
                                 <div className="certificate-gpa-date-container">
-                                    <div className="certificate-item-date">1396</div>
+                                    <div className="certificate-item-date">1399</div>
                                 </div>
                                 <div className="certificate-item-title">
-                                    مقاله ی پژوهشی
-                                    <span className="certificate-item-title-description"> - سازمان ملی نخبگان</span>
+                                    طرح پژوهشی بررسی تاثیرگذاری شاخص های فنی و قانونی و زیرساختی توسعه دولت الکترونیک و پیاده سازی و اجرای ان در استان خراسان رضوی
+                                    <span className="certificate-item-title-description"> - دانشگاه آزاد اسلامی مشهد</span>
                                 </div>
                                 <div className="certificate-item-description">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                                    فعالیت در قالب همکار طرح.
                                 </div>
                             </div>
                             <div className="research-item-container" data-tip="لینک مقاله">
@@ -49,11 +49,11 @@ class ResearchPage extends PureComponent
                                     <div className="certificate-item-date">1396</div>
                                 </div>
                                 <div className="certificate-item-title">
-                                    مقاله ی پژوهشی
-                                    <span className="certificate-item-title-description"> - سازمان ملی نخبگان</span>
+                                    مکان یابی بهینه ماشین های مجازی در مراکز داده ابرهای محاسباتی بوسیله الگوریتم فرا ابتکاری خفاش
+                                    <span className="certificate-item-title-description"> - پایگاه استنادی علوم جهان اسلام</span>
                                 </div>
                                 <div className="certificate-item-description">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                                    دومین کنفرانس بین المللی پژوهش های دانش بنیان در مهندسی کامپیوتر و فناوری اطلاعات.
                                 </div>
                             </div>
                             <div className="research-item-container" data-tip="لینک مقاله">
@@ -61,14 +61,14 @@ class ResearchPage extends PureComponent
                                     <ResearchSvg className="certificate-item-svg"/>
                                 </div>
                                 <div className="certificate-gpa-date-container">
-                                    <div className="certificate-item-date">1396</div>
+                                    <div className="certificate-item-date">1395</div>
                                 </div>
                                 <div className="certificate-item-title">
-                                    مقاله ی پژوهشی
-                                    <span className="certificate-item-title-description"> - سازمان ملی نخبگان</span>
+                                    ترکیب سرویس های وب در محاسبات ابری بر اساس الگوریتم ژنتیک بهبودیافته
+                                    <span className="certificate-item-title-description"> - پایگاه استنادی علوم جهان اسلام</span>
                                 </div>
                                 <div className="certificate-item-description">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                                    کنگره بین المللی نوآوری در مهندسی و توسعه تکنولوژی.
                                 </div>
                             </div>
                             <div className="research-item-container" data-tip="لینک مقاله">
@@ -76,44 +76,22 @@ class ResearchPage extends PureComponent
                                     <ResearchSvg className="certificate-item-svg"/>
                                 </div>
                                 <div className="certificate-gpa-date-container">
-                                    <div className="certificate-item-date">1396</div>
+                                    <div className="certificate-item-date">1395</div>
                                 </div>
                                 <div className="certificate-item-title">
-                                    مقاله ی پژوهشی
-                                    <span className="certificate-item-title-description"> - سازمان ملی نخبگان</span>
+                                    ترکیب سرویس های وب در محاسبات ابری بر اساس الگوریتم ژنتیک بهبودیافته
+                                    <span className="certificate-item-title-description"> - دانشگاه خیام مشهد</span>
                                 </div>
                                 <div className="certificate-item-description">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
-                                </div>
-                            </div>
-                            <div className="research-item-container" data-tip="لینک مقاله">
-                                <div className="certificate-item-svg-container">
-                                    <ResearchSvg className="certificate-item-svg"/>
-                                </div>
-                                <div className="certificate-gpa-date-container">
-                                    <div className="certificate-item-date">1396</div>
-                                </div>
-                                <div className="certificate-item-title">
-                                    مقاله ی پژوهشی
-                                    <span className="certificate-item-title-description"> - سازمان ملی نخبگان</span>
-                                </div>
-                                <div className="certificate-item-description">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
-                                </div>
-                            </div>
-                            <div className="research-item-container" data-tip="لینک مقاله">
-                                <div className="certificate-item-svg-container">
-                                    <ResearchSvg className="certificate-item-svg"/>
-                                </div>
-                                <div className="certificate-gpa-date-container">
-                                    <div className="certificate-item-date">1396</div>
-                                </div>
-                                <div className="certificate-item-title">
-                                    مقاله ی پژوهشی
-                                    <span className="certificate-item-title-description"> - سازمان ملی نخبگان</span>
-                                </div>
-                                <div className="certificate-item-description">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                                    محاسبات ابری، مدل رایانشی بر پایه ی اینترنت است که الگویی تازه برای عرضه، مصرف و تحویل سرویس های فناوری اطلاعات شامل: نرم افزار، اطلاعات و منابع اشتراکی رایانشی در
+                                    بستر اینترنت را ارایه میکند. این خدمات در قالب وبسرویس به کاربران ارایه می شود. هر وب سرویس دارای مولفه های کیفیت سرویس می باشد که بر اساس آن انتخاب وعرضه می شود.
+                                    این شاخص ها باید برای یک عمل ترکیب وب در نظر گرفته شوند. بااین حال تکنیک های موجود همه اینمشخصه ها را برای توصیف و ترکیب در نظر نمیگیرند. علاوه بر آن، عمل ترکیب وب
+                                    سرویس ها بر اساس تنها یکی ازشاخص های فوق از دقت کافی و مناسب برخوردار نیست. از آنجایی که تعداد سرویس های وب کاندید برای ترکیب واستفاده که خدمات مشابه اما کیفیت
+                                    سرویس متفاوت دارند در حال افزایش است، انتخاب یک ترکیب بهینه باکیفیتسرویس مطلوب که بتواند رضایت مشتری را نیز فراهم سازد یکی از چالش برانگیزترین مباحث موجود است. در
+                                    اینتحقیق سعی بر آن بوده تا از یکی از تکنیک های یادگیری تکاملی که اخیرا موردتوجه بسیار محققین درزمینه ی ترکیبسرویس های وب بوده استفاده گردد. این تکنیک نوع بهبودیافته
+                                    الگوریتم ژنتیک به نام HPGA بوده که توانسته با تعداد عملگر ژنتیکی کمتر، البته سرعت محاسباتی بیشتر و درنتیجه در زمان عملیاتی کمتر، سرویس وب ترکیبی بهینه را معرفی
+                                    نماید. نتایج رویکرد پیشنهادی در این پژوهش با تکنیک های مشابه و بر اساس الگوریتم ژنتیک پایه مقایسه گردیده است. این ارزیابی ها نشان می دهد سرعت و عملکرد اجرای رویکرد
+                                    پیشنهادی نسبت به مدلهای کلاسیک فوق به میزان 24 % بهبود یافته است؛ درحالیکه ترکیب سرویس وب مناسبتر ازنظر کیفیت سرویس را ارایه نموده است.
                                 </div>
                             </div>
                         </div>

@@ -16,7 +16,7 @@ class App extends PureComponent
         super(props)
         this.state = {
             lang: "fa",
-            selected: "intro",
+            selected: "education",
             hovered: "",
             order: 1,
             devtoolsOpen: false,
@@ -130,10 +130,10 @@ class App extends PureComponent
                     }
                     {
                         selected === "contact" &&
-                        <div className="contact-container">
+                        <div className={`contact-container ${order < 8 ? "is-next" : "is-previous"}`}>
                             <ContactPage/>
                         </div>
-                    }
+                     }
                 </div>
             )
         else return <div style={{textAlign: "center", padding: "20px", direction: "ltr"}}>It's Beautiful, isn't it?</div>

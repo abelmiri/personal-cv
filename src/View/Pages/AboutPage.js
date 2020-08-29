@@ -1,5 +1,6 @@
 import React, {PureComponent} from "react"
 import CvSvg from "../../Media/SVG/CvSvg"
+import MedalSvg from "../../Media/SVG/MedalSvg"
 
 class AboutPage extends PureComponent
 {
@@ -48,6 +49,37 @@ class AboutPage extends PureComponent
                             </div>
                         </div>
                     </div>
+                        <div className="about-download-cv-button">
+                            دریافت فایل رزومه
+                            <CvSvg className="about-download-cv-button-svg"/>
+                        </div>
+                    <div className="about-first-glance-stats">
+                        <div className="about-first-glance-box">
+                            +20
+                            <div className="about-first-glance-box-title">
+                                سال سابقه
+                            </div>
+                        </div>
+                        <div className="about-first-glance-box">
+                            +150
+                            <div className="about-first-glance-box-title">
+                                پروژه پایان یافته
+                            </div>
+                        </div>
+                        <div className="about-first-glance-box">
+                            +65
+                            <div className="about-first-glance-box-title">
+                                مدرک معتبر
+                            </div>
+                        </div>
+                        <div className="about-first-glance-box">
+                            +30
+                            <div className="about-first-glance-box-title">
+                                مقاله
+                            </div>
+                        </div>
+                    </div>
+                    {/*
                     <div className="about-first-glance-description">
                         <div>اطلاعات شخصی</div>
                         <div className="about-first-glance-description-content">
@@ -87,6 +119,7 @@ class AboutPage extends PureComponent
                             </div>
                         </div>
                     </div>
+*/}
                 </div>
                 <div className="about-separator-container">
                     <div className="about-separator"/>
@@ -138,30 +171,106 @@ class AboutPage extends PureComponent
                             <div className="about-skill-item-title">مهارت گفتاری</div>
                         </div>
                     </div>
-                    <div className="about-skill-title">زبان عربی</div>
-                    <div className="about-skills">
-                        <div className="about-skill-item">
-                            <div className="about-skill-item-bar _60"/>
-                            <div className="about-skill-item-title">مهارت خواندن</div>
+                </div>
+                <div className="about-separator-container">
+                    <div className="about-separator"/>
+                </div>
+                <div className="about-skills-container">
+                    <div>افتخارات</div>
+                    <div className="certificate-contents">
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <MedalSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-gpa-date-container">
+                                <div className="certificate-item-date">1392</div>
+                            </div>
+                            <div className="certificate-item-title">
+                                انتخاب به عنوان سرباز نمونه کشوری در حوزه فناوری اطلاعات، نظم و انضباط اجتماعی
+                            </div>
                         </div>
-                        <div className="about-skill-item">
-                            <div className="about-skill-item-bar _20"/>
-                            <div className="about-skill-item-title">مهارت نوشتن</div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <MedalSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-gpa-date-container">
+                                <div className="certificate-item-date">1396</div>
+                            </div>
+                            <div className="certificate-item-title">
+                                کارشناس داور المپیاد ملی مهارت در رشته فناوری اطلاعات و طراحی وب در مرحله استانی و شهرستانی
+                            </div>
                         </div>
-                        <div className="about-skill-item">
-                            <div className="about-skill-item-bar _20"/>
-                            <div className="about-skill-item-title">مهارت شنیداری</div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <MedalSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-gpa-date-container">
+                                <div className="certificate-item-date">1398</div>
+                            </div>
+                            <div className="certificate-item-title">
+                                داور جشنواره دانشجویی دانشگاه فنی و حرفه ای کشور در زمینه تولیدات نرم افزاری و شبکه های مجازی
+                            </div>
                         </div>
-                        <div className="about-skill-item">
-                            <div className="about-skill-item-bar _20"/>
-                            <div className="about-skill-item-title">مهارت گفتاری</div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <MedalSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-gpa-date-container">
+                                <div className="certificate-item-date">1398</div>
+                            </div>
+                            <div className="certificate-item-title">
+                                عضو کمیته فناوری اطلاعات ستاد برگزاری انتخابات استان
+                            </div>
+                        </div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <MedalSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-gpa-date-container">
+                                <div className="certificate-item-date">1396</div>
+                            </div>
+                            <div className="certificate-item-title">
+                                آزمونگر تعیین سطح مربیگری دوره های پیشرفته کامپیوتر
+                            </div>
+                        </div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <MedalSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-gpa-date-container">
+                                <div className="certificate-item-date">1398</div>
+                            </div>
+                            <div className="certificate-item-title">
+                                دریافت بیش از 10 لوح تقدیر از مقامات دولتی، مدیران کل دستگاه های اجرایی و رئوسای دانشگاه
+                            </div>
+                        </div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <MedalSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-gpa-date-container">
+                                <div className="certificate-item-date">1398</div>
+                            </div>
+                            <div className="certificate-item-title">
+                                برگزاری بیش از 10 رویداد علمی و آموزشی (همایش، سمینار، کنفرانس و...)
+                            </div>
+                        </div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <MedalSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-gpa-date-container">
+                                <div className="certificate-item-date">1395</div>
+                            </div>
+                            <div className="certificate-item-title">
+                                کسب رتبه 80 کاردانی پیوسته و رتبه 30 کارشناسی ناپیوسته و 400 کارشناسی ارشد آزمون سراسری
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className="about-separator-container">
                     <div className="about-separator"/>
                 </div>
-
             </React.Fragment>
         )
     }

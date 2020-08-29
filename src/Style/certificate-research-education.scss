@@ -53,6 +53,7 @@
 .certificate-first-glance {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .certificate-first-glance-description {
@@ -68,17 +69,78 @@
   flex-wrap: wrap;
   font-size: 18px;
   margin: 5px 0;
+  justify-content: space-evenly;
 }
 
-.certificate-item-container {
-  width: 220px;
+.honor-item-container {
+  width: 200px;
   height: auto;
   border-right: 1px solid rgba(255, 255, 255, .1);
   flex-grow: 1;
   padding: 0 40px;
   position: relative;
   transition-duration: $animation-time;
-  margin: 55px 0;
+  margin: 35px 20px;
+
+  &:hover {
+    border-right: 1px solid rgba(255, 180, 0, .4);
+    cursor: pointer;
+
+    .certificate-item-svg-container {
+      background-color: var(--primary-color);
+    }
+
+    .certificate-item-svg {
+      fill: var(--font-color);
+    }
+
+    .certificate-item-title {
+      color: var(--primary-color);
+    }
+
+    .certificate-item-title-description {
+      color: var(--font-color);
+    }
+
+    .certificate-item-description {
+      color: lightgray;
+    }
+
+    .certificate-gpa-date-container {
+      color: var(--primary-color);
+    }
+  }
+}
+
+.certificate-item-container {
+  width: 280px;
+  height: auto;
+  border-right: 1px solid rgba(255, 255, 255, .1);
+  flex-grow: 1;
+  padding: 0 40px;
+  position: relative;
+  transition-duration: $animation-time;
+  margin: 35px 20px;
+
+  &.active {
+    cursor: default !important;
+
+    .certificate-item-title {
+      color: var(--primary-color);
+    }
+
+    .certificate-item-title-description {
+      color: var(--font-color);
+    }
+
+    .certificate-item-description {
+      color: lightgray;
+    }
+
+    .certificate-gpa-date-container {
+      color: var(--primary-color);
+    }
+  }
 
   &:hover {
     border-right: 1px solid rgba(255, 180, 0, .4);
@@ -170,6 +232,8 @@
   font-size: 18px;
   color: var(--font-color);
   transition-duration: $animation-time;
+  line-height: 35px;
+  text-align: justify;
 }
 
 .certificate-item-title-description {
@@ -208,4 +272,32 @@
   height: 15px;
   fill: var(--primary-color);
   transition-duration: $animation-time;
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  transform: translateY(1000px);
+  transition-duration: .5s;
+}
+
+.fade-exit {
+  transform: translateY(1000px);
+  transition-duration: .5s;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: all 500ms ease-out;
+}
+
+.fade-appear {
+  opacity: 0.1;
+}
+
+.fade-appear.fade-appear-active {
+  transform: translateY(1000px);
+  transition-duration: .5s;
 }
