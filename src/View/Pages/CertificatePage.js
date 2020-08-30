@@ -32,7 +32,7 @@ class CertificatePage extends PureComponent
                                     <CertificateSvg className="certificate-item-svg"/>
                                 </div>
                                 <div className="certificate-gpa-date-container">
-                                    <div className="certificate-item-date">سال 1395 تا حالا</div>
+                                    <div className="certificate-item-date">سال 1399 تا حالا</div>
                                 </div>
                                 <div className="certificate-item-title">
                                     مهندسی نرم افزار - هوش مصنوعی

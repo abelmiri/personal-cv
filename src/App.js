@@ -16,7 +16,7 @@ class App extends PureComponent
         super(props)
         this.state = {
             lang: "fa",
-            selected: "education",
+            selected: "intro",
             hovered: "",
             order: 1,
             devtoolsOpen: false,
@@ -42,7 +42,7 @@ class App extends PureComponent
     select = (text) =>
     {
         const {selected} = this.state
-        switch (selected)
+        if (text !== selected) switch (selected)
         {
             case "intro":
                 this.setState({...this.state, selected: text, hovered: "", order: 1})
@@ -133,7 +133,7 @@ class App extends PureComponent
                         <div className={`contact-container ${order < 8 ? "is-next" : "is-previous"}`}>
                             <ContactPage/>
                         </div>
-                     }
+                    }
                 </div>
             )
         else return <div style={{textAlign: "center", padding: "20px", direction: "ltr"}}>It's Beautiful, isn't it?</div>

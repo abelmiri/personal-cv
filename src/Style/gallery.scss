@@ -1,0 +1,129 @@
+@import "variables";
+
+.gallery-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-item-container {
+  width: 63%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  flex-grow: 1;
+  direction: rtl;
+  text-align: justify;
+  background-color: var(--dark-color);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 255px;
+  margin: 15px;
+  cursor: pointer;
+
+  &:hover {
+    .gallery-item-picture {
+      transform: scale(1.2);
+    }
+
+    .gallery-item-title {
+      color: var(--primary-color);
+    }
+  }
+}
+
+.gallery-item-picture-container {
+  overflow: hidden;
+  height: 170px;
+  border-bottom: 5px solid var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item-picture {
+  width: 100%;
+  transition: all ease $animation-time;
+  object-fit: cover;
+}
+
+.gallery-item-text-container {
+  padding: 25px;
+}
+
+.gallery-item-title {
+  font-size: 16px;
+  font-weight: bold;
+  transition: color ease $animation-time;
+  margin-bottom: 15px;
+  line-height: 30px;
+}
+
+.gallery-item-description {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.galley-modal-container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: gallery-back ease $animation-time;
+  background-color: rgba(0, 0, 0, .75);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@keyframes gallery-back {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.gallery-arrow-container {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, .05);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  margin: 0 20px;
+  cursor: pointer;
+  transition-duration: $animation-time;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, .1);
+  }
+}
+
+.gallery-back-arrow {
+  width: 50px;
+  height: 50px;
+  fill: var(--primary-color);
+}
+
+.gallery-next-arrow {
+  transform: rotate(180deg);
+  width: 50px;
+  height: 50px;
+  fill: var(--primary-color);
+}
+
+.gallery-modal-picture {
+  height: 95vh;
+}

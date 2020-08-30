@@ -1,5 +1,6 @@
 import React, {PureComponent} from "react"
 import EducationSvg from "../../Media/SVG/EducationSvg"
+import CheckboxSvg from "../../Media/SVG/CheckboxSvg"
 
 class EducationPage extends PureComponent
 {
@@ -25,88 +26,154 @@ class EducationPage extends PureComponent
                     <div className="certificate-first-glance-description">
                         <div>سوابق تدریس</div>
                         <div className="certificate-contents">
+
                             <div className="research-item-container">
                                 <div className="certificate-item-svg-container">
                                     <EducationSvg className="certificate-item-svg"/>
                                 </div>
-                                <span className="certificate-item-date">1393 تا حالا</span>
+                                <span className="certificate-item-date">مهر 1395</span>
                                 <br/>
                                 <div className="certificate-item-title">
-                                    طراحی صفحات وب
-                                    <span className="certificate-item-title-description"> - دانشگاه سجاد مشهد</span>
+                                    طراحی وب
+                                    <span className="certificate-item-title-description"> - دانشگاه صنعتی سجاد مشهد</span>
                                 </div>
                                 <div className="certificate-item-description">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    مهندسی اینترنت
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    طراحی صفحات وب
                                 </div>
                             </div>
+
                             <div className="research-item-container">
                                 <div className="certificate-item-svg-container">
                                     <EducationSvg className="certificate-item-svg"/>
                                 </div>
-                                <span className="certificate-item-date">1393 تا حالا</span>
+                                <span className="certificate-item-date">مهر 1394</span>
                                 <br/>
                                 <div className="certificate-item-title">
-                                    طراحی صفحات وب
-                                    <span className="certificate-item-title-description"> - دانشگاه سجاد مشهد</span>
+                                    برنامه نویسی
+                                    <span className="certificate-item-title-description"> - دانشگاه فنی و حرفه ای استان</span>
                                 </div>
                                 <div className="certificate-item-description">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    برنامه سازی پیشرفته 1 و 2
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    بانک های اطلاعاتی
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    مبانی و مهندسی اینترنت
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    طراحی و برنامه نویسی مبتنی بر وب
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    پروژه پایان دوره کاردانی و کارشناسی
+                                    <br/>
                                 </div>
                             </div>
+
                             <div className="research-item-container">
                                 <div className="certificate-item-svg-container">
                                     <EducationSvg className="certificate-item-svg"/>
                                 </div>
-                                <span className="certificate-item-date">1393 تا حالا</span>
+                                <span className="certificate-item-date">تیر 1394</span>
                                 <br/>
                                 <div className="certificate-item-title">
-                                    طراحی صفحات وب
-                                    <span className="certificate-item-title-description"> - دانشگاه سجاد مشهد</span>
+                                    کارشناسی فناوری اطلاعات
+                                    <span className="certificate-item-title-description"> - ضمن خدمت کارکنان دولت</span>
                                 </div>
                                 <div className="certificate-item-description">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    کارشناسان فناوری اطلاعات استانداری و فرمانداری های استان خراسان رضوی
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    کارشناسان سازمان فاوا شهرداری مشهد
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    کارشناسان پلیس فتا نیروی انتظامی استان
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    کارشناسان شرکت پشتیبان توزیع نیروی برق استان
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    کارشناسان انفورماتیک دانشگاه علوم پزشکی مشهد
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    توانمندسازی مربیان سازمان فنی و حرفه ای استان خراسان بزرگ (شمالی-رضوی-جنوبی)
+                                    <br/>
                                 </div>
                             </div>
+
                             <div className="research-item-container">
                                 <div className="certificate-item-svg-container">
                                     <EducationSvg className="certificate-item-svg"/>
                                 </div>
-                                <span className="certificate-item-date">1393 تا حالا</span>
+                                <span className="certificate-item-date">فروردین 1390</span>
                                 <br/>
                                 <div className="certificate-item-title">
-                                    طراحی صفحات وب
-                                    <span className="certificate-item-title-description"> - دانشگاه سجاد مشهد</span>
+                                    فناوری اطلاعات
+                                    <span className="certificate-item-title-description"> - آموزشگاه های آزاد</span>
                                 </div>
                                 <div className="certificate-item-description">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    آزمایشگاه یادگیری فناوری اطلاعات لایتک دانشگاه صنعتی شریف
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    مرکز آموزش های آزاد دانشگاه فردوسی مشهد
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    مرکز آموزش های آزاد دانشگاه پیام نور مشهد
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    مرکز آموزش های آزاد دانشگاه امام حسین(ع) مشهد
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    مجتمع آموزش عالی دی سیستم مشهد
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    مجمتمع آموزشی مدرسان شریف
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    مجتمع آموزشی انفورماتیک بین الملل
+                                    <br/>
                                 </div>
                             </div>
+
                             <div className="research-item-container">
                                 <div className="certificate-item-svg-container">
                                     <EducationSvg className="certificate-item-svg"/>
                                 </div>
-                                <span className="certificate-item-date">1393 تا حالا</span>
+                                <span className="certificate-item-date">تیر 1388</span>
                                 <br/>
                                 <div className="certificate-item-title">
-                                    طراحی صفحات وب
-                                    <span className="certificate-item-title-description"> - دانشگاه سجاد مشهد</span>
+                                    طراحی و توسعه صفحات وب
+                                    <span className="certificate-item-title-description"> - مهارت های پیشرفته فنی و حرفه ای</span>
                                 </div>
                                 <div className="certificate-item-description">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
-                                </div>
-                            </div>
-                            <div className="research-item-container">
-                                <div className="certificate-item-svg-container">
-                                    <EducationSvg className="certificate-item-svg"/>
-                                </div>
-                                <span className="certificate-item-date">1393 تا حالا</span>
-                                <br/>
-                                <div className="certificate-item-title">
-                                    طراحی صفحات وب
-                                    <span className="certificate-item-title-description"> - دانشگاه سجاد مشهد</span>
-                                </div>
-                                <div className="certificate-item-description">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    مهندس در توسعه وب های Enterprise ASP.NET
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    برنامه نویس Entity Framework
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    برنامه نویس ASP.NET
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    برنامه نویس MVC
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    برنامه نویس AJAX
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    برنامه نویس C#.NET
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    مدرس Web Design Fundamental
+                                    <br/>
                                 </div>
                             </div>
                         </div>
