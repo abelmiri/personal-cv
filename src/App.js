@@ -16,7 +16,7 @@ class App extends PureComponent
         super(props)
         this.state = {
             lang: "fa",
-            selected: "contact",
+            selected: "intro",
             hovered: "",
             order: 1,
             devtoolsOpen: false,

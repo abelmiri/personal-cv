@@ -22,12 +22,15 @@ const GalleryModal = props =>
 
     return (
         <React.Fragment>
-            <div className="gallery-arrow-container" onClick={(e) => previous(e)}>
+            <div className="gallery-arrow-container previous" onClick={(e) => previous(e)}>
                 <ArrowSvg className="gallery-back-arrow"/>
             </div>
-            <div><img className="gallery-modal-picture" src={pictures[count]} alt={count}/></div>
-            <div className="gallery-arrow-container" onClick={(e) => next(e)}>
+            <img className="gallery-modal-picture" src={pictures[count]} alt={count}/>
+            <div className="gallery-arrow-container next" onClick={(e) => next(e)}>
                 <ArrowSvg className="gallery-next-arrow"/>
+            </div>
+            <div className="gallery-modal-mobile">
+
             </div>
         </React.Fragment>
     )

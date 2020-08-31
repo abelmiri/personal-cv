@@ -71,7 +71,7 @@
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   animation: gallery-back ease $animation-time;
   background-color: rgba(0, 0, 0, .75);
   top: 0;
@@ -105,9 +105,22 @@
   margin: 0 20px;
   cursor: pointer;
   transition-duration: $animation-time;
+  position: fixed;
 
   &:hover {
     background-color: rgba(255, 255, 255, .1);
+  }
+
+  &.next {
+    bottom: 50%;
+    transform: translateY(50%);
+    right: 0;
+  }
+
+  &.previous {
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 0;
   }
 }
 
@@ -126,14 +139,19 @@
 
 .gallery-modal-picture {
   height: 95vh;
+  max-width: 85%;
 }
 
 @media (max-width: 770px) {
-  .gallery-wrapper{
+  .gallery-wrapper {
     justify-content: flex-end;
+    width: 100%;
+  }
+  .gallery-item {
+    margin-right: 0;
   }
   .gallery-item-container {
-    width: 94%;
+    width: 100%;
   }
   .gallery-item-text-container {
     padding: 20px;
@@ -144,5 +162,35 @@
   }
   .gallery-item-description {
     font-size: 12px;
+  }
+  .gallery-modal-picture {
+    height: auto;
+    width: 95%;
+    max-height: 70vh;
+    max-width: 95%;
+  }
+  .gallery-arrow-container {
+    padding: 20px;
+    order: 2;
+    height: auto;
+    position: fixed;
+
+    &.next {
+      bottom: 15px;
+      right: 0;
+      transform: translateY(-10%);
+    }
+
+    &.previous {
+      bottom: 15px;
+      left: 0;
+      transform: translateY(-10%);
+    }
+  }
+  .galley-modal-container {
+    justify-content: center;
+  }
+  .galley-tooltip-container {
+    display: none;
   }
 }

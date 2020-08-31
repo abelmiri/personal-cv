@@ -65,7 +65,9 @@ class GalleryPage extends PureComponent
                         <GalleryModal pictures={gallery}/>
                     </div>
                 }
-                <ReactTooltip textColor="var(--primary-color)" backgroundColor="rgba(20,20,20,.9)"/>
+                <div className="galley-tooltip-container">
+                    <ReactTooltip textColor="var(--primary-color)" backgroundColor="rgba(20,20,20,.9)"/>
+                </div>
             </React.Fragment>
         )
     }
