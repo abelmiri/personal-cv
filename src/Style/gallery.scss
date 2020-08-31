@@ -127,3 +127,22 @@
 .gallery-modal-picture {
   height: 95vh;
 }
+
+@media (max-width: 770px) {
+  .gallery-wrapper{
+    justify-content: flex-end;
+  }
+  .gallery-item-container {
+    width: 94%;
+  }
+  .gallery-item-text-container {
+    padding: 20px;
+  }
+  .gallery-item-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .gallery-item-description {
+    font-size: 12px;
+  }
+}

@@ -140,6 +140,7 @@
   justify-content: center;
   align-items: center;
   transition-duration: $animation-time;
+  margin-bottom: 15px;
 
   &:hover {
     background-color: var(--primary-color);
@@ -177,6 +178,7 @@
   font-size: 15px;
   color: var(--font-color);
   transition-duration: $animation-time;
+  direction: rtl;
 
   &:focus {
     border: 1px solid var(--primary-color);
@@ -184,6 +186,7 @@
 }
 
 .contact-textarea {
+  direction: rtl;
   text-decoration: none;
   border: 1px solid var(--dark-color);
   border-radius: 30px;
@@ -247,6 +250,11 @@
   transform: scaleX(-1) translateX(0);
 }
 
+@media (min-width: 1300px) and (max-width: 1600px) {
+  .contact-textarea {
+    height: 245px;
+  }
+}
 
 @media (max-width: 1300px) {
   .contact-textarea {
@@ -254,10 +262,44 @@
   }
 }
 
-
-@media (min-width: 1300px) and (max-width: 1600px) {
+@media (max-width: 770px) {
+  .contact-header {
+    font-size: 40px;
+  }
+  .contact-header-back-text {
+    font-size: 65px;
+    width: 100%;
+    top: 0;
+    letter-spacing: normal;
+  }
+  .contact-body {
+    flex-wrap: wrap;
+  }
+  .contact-info {
+    width: 100%;
+    order: 1;
+  }
+  .contact-form {
+    order: 2;
+    width: 90%;
+    margin-top: 10px;
+  }
+  .contact-info-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .contact-info-description {
+    font-size: 14px;
+  }
+  .contact-info-mail-phone-container {
+    margin-top: 20px;
+  }
+  .contact-input {
+    margin-bottom: 25px;
+  }
   .contact-textarea {
-    height: 245px;
+    margin-bottom: 20px;
+    height: 150px;
   }
 }
 

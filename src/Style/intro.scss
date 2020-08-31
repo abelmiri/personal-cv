@@ -227,3 +227,60 @@
   top: 15px;
   left: 25%;
 }
+
+
+.intro-info-svg-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+}
+
+@media (max-width: 770px) {
+  .intro-container {
+    flex-wrap: wrap;
+  }
+  .intro-animated-background {
+    opacity: 0;
+  }
+  .intro-picture-container {
+    width: 220px;
+    height: 220px;
+    margin: 30px auto auto 16%;
+    border-radius: 50%;
+    background-image: url("../Media/Image/model_mobile.jpg");
+  }
+  .intro-content-wrapper {
+    width: calc(100% - 20px);
+    padding-left: 20px;
+    font-size: 20px;
+  }
+  .intro-text-bold {
+    font-size: 22px;
+  }
+  .intro-text-description {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .intro-text-container {
+    width: 100%;
+  }
+  .intro-info-svg-container {
+    justify-content: space-around;
+    margin-top: 0;
+
+    a {
+      margin: 20px;
+    }
+  }
+  .intro-bottom-buttons-container {
+    margin: auto;
+  }
+  .about-download-cv-button {
+    width: calc(100% - 14px) !important;
+    margin: 0 7px !important;
+    font-size: 16px !important;
+    padding: 8px !important;
+  }
+}

@@ -9,7 +9,11 @@ class AboutPage extends PureComponent
         super(props)
 
         this.state = {}
+    }
 
+    componentDidMount()
+    {
+        window.scrollTo(0, 0)
     }
 
     render()
@@ -49,10 +53,10 @@ class AboutPage extends PureComponent
                             </div>
                         </div>
                     </div>
-                        <div className="about-download-cv-button">
-                            دریافت فایل رزومه
-                            <CvSvg className="about-download-cv-button-svg"/>
-                        </div>
+                    <div className="about-download-cv-button">
+                        دریافت فایل رزومه
+                        <CvSvg className="about-download-cv-button-svg"/>
+                    </div>
                     <div className="about-first-glance-stats">
                         <div className="about-first-glance-box">
                             +20

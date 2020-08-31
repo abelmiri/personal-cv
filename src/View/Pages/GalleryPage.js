@@ -20,6 +20,11 @@ class GalleryPage extends PureComponent
         }
     }
 
+    componentDidMount()
+    {
+        window.scrollTo(0, 0)
+    }
+
     showGallery = (items) =>
     {
         this.setState({...this.state, gallery: items})

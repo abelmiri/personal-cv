@@ -9,7 +9,11 @@ class EducationPage extends PureComponent
         super(props)
 
         this.state = {}
+    }
 
+    componentDidMount()
+    {
+        window.scrollTo(0, 0)
     }
 
     render()

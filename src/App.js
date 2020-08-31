@@ -16,7 +16,7 @@ class App extends PureComponent
         super(props)
         this.state = {
             lang: "fa",
-            selected: "intro",
+            selected: "contact",
             hovered: "",
             order: 1,
             devtoolsOpen: false,
@@ -33,7 +33,6 @@ class App extends PureComponent
             setInterval(() =>
             {
                 devtoolsOpen = false
-                console.log(element)
                 if (devtoolsOpen !== this.state.devtoolsOpen) this.setState({...this.state, devtoolsOpen})
             }, 1000)
         }

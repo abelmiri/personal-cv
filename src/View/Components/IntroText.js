@@ -31,7 +31,7 @@ const IntroText = (props) =>
                 {/*        <UserSvg className="intro-more-about-button-svg"/>*/}
                 {/*    </div>*/}
                 {/*</div>*/}
-                <div className="contact-info-svg-container">
+                <div className="intro-info-svg-container">
                     <a href="https://telegram.me/AhmadJanatiFard" className="intro-info-detail-svg-wrapper">
                         <TelegramSvg className="intro-info-detail-svg telegram"/>
                     </a>

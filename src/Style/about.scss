@@ -308,3 +308,52 @@
     width: 20%;
   }
 }
+
+@media (max-width: 770px) {
+  .about-skills-container {
+    width: 90%;
+  }
+  .about-header {
+    padding: 60px 0;
+  }
+  .about-header-back-text {
+    letter-spacing: normal;
+    font-size: 70px;
+    width: 100%;
+    top: -10px;
+  }
+  .about-first-glance {
+    .about-download-cv-button {
+      display: none;
+    }
+  }
+  .about-first-glance-stats {
+    width: 50%;
+  }
+  .about-first-glance-box {
+    width: 100px;
+    height: auto;
+    font-size: 30px;
+    padding: 10px 10px 15px 10px;
+  }
+  .about-first-glance-box-title {
+    font-size: 14px;
+  }
+  .about-separator-container {
+    margin: 20px 0 30px 0;
+  }
+  .about-skill-item {
+    margin-bottom: 35px;
+    height: 16px;
+
+    &:first-child {
+      margin-top: 85px;
+    }
+  }
+  .about-skill-item-bar {
+    height: 16px;
+  }
+  .about-skill-item-title {
+    bottom: 25px;
+  }
+}

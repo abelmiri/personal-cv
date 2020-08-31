@@ -147,3 +147,56 @@
   display: flex;
   justify-content: flex-end;
 }
+
+@media (max-width: 770px) {
+  .main-sidebar-container {
+    width: 80px;
+    z-index: 2;
+  }
+  .main-sidebar-text {
+    width: 50px;
+  }
+  .main-sidebar-option {
+    margin: 7px 12px;
+
+    &:hover {
+      .main-sidebar-text {
+        opacity: 0;
+        display: none;
+      }
+
+      &.intro {
+        width: 55px;
+      }
+
+      &.about {
+        width: 55px;
+      }
+
+      &.certificate {
+        width: 55px;
+      }
+
+      &.research {
+        width: 55px;
+      }
+
+      &.education {
+        width: 55px;
+      }
+
+      &.work {
+        width: 55px;
+      }
+
+      &.gallery {
+        width: 55px;
+      }
+
+      &.contact {
+        width: 55px;
+      }
+
+    }
+  }
+}

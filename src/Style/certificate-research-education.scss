@@ -406,3 +406,88 @@
     margin-bottom: 5px;
   }
 }
+
+@media (max-width: 770px) {
+  .certificate-header-back-text {
+    top: -5px;
+    font-size: 70px;
+  }
+  .certificate-header {
+    font-size: 40px;
+  }
+  .certificate-item-title {
+    font-size: 14px;
+  }
+  .certificate-item-title-description {
+    font-size: 14px;
+  }
+  .certificate-item-description {
+    font-size: 13px;
+  }
+  .certificate-first-glance-description {
+    width: 90%;
+  }
+  .certificate-item-date {
+    font-size: 11px;
+  }
+  .certificate-item-container {
+    padding: 9px 30px 9px 0;
+  }
+  .research-item-container {
+    padding: 5px 30px 8px 5px;
+  }
+  .work-item-container {
+    margin-top: 20px;
+  }
+  .work-item {
+    margin: 0 -8px;
+    position: relative;
+
+    &:nth-child(odd) {
+      padding-left: 7px;
+
+      .work-item-date {
+        left: -120px;
+      }
+    }
+
+    &:nth-child(even) {
+      padding-right: 7px;
+
+      .work-item-date {
+        right: -120px;
+      }
+    }
+
+    &:hover {
+      cursor: default;
+
+      &:nth-child(odd) {
+        .work-item-date {
+          left: -125px;
+        }
+      }
+
+      &:nth-child(even) {
+        .work-item-date {
+          right: -125px;
+        }
+      }
+    }
+  }
+  .work-item-title {
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .work-item-organization {
+    font-size: 14px;
+  }
+  .work-item-description {
+    font-size: 12px;
+    text-align: center;
+  }
+  .work-item-date {
+    font-size: 11px;
+  }
+}
