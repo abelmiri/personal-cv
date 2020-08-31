@@ -1,5 +1,4 @@
 import React, {PureComponent} from "react"
-import CvSvg from "../../Media/SVG/CvSvg"
 import MedalSvg from "../../Media/SVG/MedalSvg"
 
 class AboutPage extends PureComponent
@@ -52,10 +51,6 @@ class AboutPage extends PureComponent
                                 مقاله
                             </div>
                         </div>
-                    </div>
-                    <div className="about-download-cv-button">
-                        دریافت فایل رزومه
-                        <CvSvg className="about-download-cv-button-svg"/>
                     </div>
                     <div className="about-first-glance-stats">
                         <div className="about-first-glance-box">

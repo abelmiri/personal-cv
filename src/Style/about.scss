@@ -133,11 +133,18 @@
 }
 
 .about-first-glance-stats {
-  width: 35%;
+  width: 45%;
   display: flex;
   flex-wrap: wrap;
   text-align: right;
-  justify-content: space-evenly;
+
+  &:nth-child(even) {
+    justify-content: flex-start;
+  }
+
+  &:nth-child(odd) {
+    justify-content: flex-end;
+  }
 }
 
 .about-first-glance-box {

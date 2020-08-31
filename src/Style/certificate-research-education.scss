@@ -48,6 +48,7 @@
   transform: translateX(-50%);
   letter-spacing: -5px;
   z-index: -1;
+  width: 100%;
 }
 
 .certificate-first-glance {
@@ -113,7 +114,7 @@
 }
 
 .certificate-item-container {
-  width: 280px;
+  width: 200px;
   height: auto;
   border-right: 1px solid rgba(255, 255, 255, .1);
   flex-grow: 1;
@@ -173,7 +174,7 @@
 }
 
 .research-item-container {
-  width: 400px;
+  width: 260px;
   height: auto;
   border-right: 1px solid rgba(255, 255, 255, .1);
   flex-grow: 1;
@@ -229,7 +230,7 @@
 
 .certificate-item-title {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 17px;
   color: var(--font-color);
   transition-duration: $animation-time;
   line-height: 35px;
@@ -248,7 +249,7 @@
   color: grey;
   line-height: 27px;
   margin-top: 10px;
-  text-align: justify;
+  text-align: right;
   transition-duration: $animation-time;
 }
 
