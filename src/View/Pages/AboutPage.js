@@ -1,5 +1,6 @@
 import React, {PureComponent} from "react"
 import MedalSvg from "../../Media/SVG/MedalSvg"
+import AppreciationSvg from "../../Media/SVG/AppreciationSvg"
 
 class AboutPage extends PureComponent
 {
@@ -263,6 +264,47 @@ class AboutPage extends PureComponent
                             </div>
                             <div className="certificate-item-title">
                                 کسب رتبه 80 کاردانی پیوسته و رتبه 30 کارشناسی ناپیوسته و 400 کارشناسی ارشد آزمون سراسری
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="about-separator-container">
+                    <div className="about-separator"/>
+                </div>
+                <div className="about-skills-container">
+                    <div>تقدیرنامه‌ها</div>
+                    <div className="certificate-contents">
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <AppreciationSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-gpa-date-container">
+                                <div className="certificate-item-date">1392</div>
+                            </div>
+                            <div className="certificate-item-title">
+                                انتخاب به عنوان سرباز نمونه کشوری در حوزه فناوری اطلاعات، نظم و انضباط اجتماعی
+                            </div>
+                        </div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <AppreciationSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-gpa-date-container">
+                                <div className="certificate-item-date">1396</div>
+                            </div>
+                            <div className="certificate-item-title">
+                                کارشناس داور المپیاد ملی مهارت در رشته فناوری اطلاعات و طراحی وب در مرحله استانی و شهرستانی
+                            </div>
+                        </div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <AppreciationSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-gpa-date-container">
+                                <div className="certificate-item-date">1398</div>
+                            </div>
+                            <div className="certificate-item-title">
+                                داور جشنواره دانشجویی دانشگاه فنی و حرفه ای کشور در زمینه تولیدات نرم افزاری و شبکه های مجازی
                             </div>
                         </div>
                     </div>

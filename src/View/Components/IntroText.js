@@ -11,6 +11,11 @@ import ResearchSvg from "../../Media/SVG/ResearchSvg"
 import WorkSvg from "../../Media/SVG/WorkSvg"
 import ContactSvg from "../../Media/SVG/ContactSvg"
 import GallerySvg from "../../Media/SVG/GallerySvg"
+import MedalSvg from "../../Media/SVG/MedalSvg"
+import AppreciationSvg from "../../Media/SVG/AppreciationSvg"
+import SkillSvg from "../../Media/SVG/SkillSvg"
+import CertificateShortSvg from "../../Media/SVG/CertificateShortSvg"
+import ProjectSvg from "../../Media/SVG/ProjectSvg"
 
 const IntroText = (props) =>
 {
@@ -54,9 +59,25 @@ const IntroText = (props) =>
                         درباره من
                         <UserSvg className="intro-side-bar-button-svg"/>
                     </div>
+                    <div className="intro-side-bar-button" onClick={() => onSelect("about")} onMouseOver={() => OnHover("about")} onMouseLeave={() => OnHover("")}>
+                        مهارت‌ها
+                        <SkillSvg className="intro-side-bar-button-svg"/>
+                    </div>
+                    <div className="intro-side-bar-button" onClick={() => onSelect("about")} onMouseOver={() => OnHover("about")} onMouseLeave={() => OnHover("")}>
+                        افتخارات
+                        <MedalSvg className="intro-side-bar-button-svg"/>
+                    </div>
+                    <div className="intro-side-bar-button" onClick={() => onSelect("about")} onMouseOver={() => OnHover("about")} onMouseLeave={() => OnHover("")}>
+                        تقدیرنامه‌ها
+                        <AppreciationSvg className="intro-side-bar-button-svg"/>
+                    </div>
                     <div className="intro-side-bar-button" onClick={() => onSelect("certificate")} onMouseOver={() => OnHover("certificate")} onMouseLeave={() => OnHover("")}>
                         مدارک علمی
                         <CertificateSvg className="intro-side-bar-button-svg"/>
+                    </div>
+                    <div className="intro-side-bar-button" onClick={() => onSelect("certificate")} onMouseOver={() => OnHover("certificate")} onMouseLeave={() => OnHover("")}>
+                        گواهینامه‌ها
+                        <CertificateShortSvg className="intro-side-bar-button-svg"/>
                     </div>
                     <div className="intro-side-bar-button" onClick={() => onSelect("research")} onMouseOver={() => OnHover("research")} onMouseLeave={() => OnHover("")}>
                         سوابق پژوهشی
@@ -69,6 +90,10 @@ const IntroText = (props) =>
                     <div className="intro-side-bar-button" onClick={() => onSelect("work")} onMouseOver={() => OnHover("work")} onMouseLeave={() => OnHover("")}>
                         سوابق اجرایی
                         <WorkSvg className="intro-side-bar-button-svg"/>
+                    </div>
+                    <div className="intro-side-bar-button" onClick={() => onSelect("work")} onMouseOver={() => OnHover("work")} onMouseLeave={() => OnHover("")}>
+                        پروژه‌ها
+                        <ProjectSvg className="intro-side-bar-button-svg"/>
                     </div>
                     <div className="intro-side-bar-button" onClick={() => onSelect("gallery")} onMouseOver={() => OnHover("gallery")} onMouseLeave={() => OnHover("")}>
                         گالری تصاویر

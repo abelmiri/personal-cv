@@ -1,4 +1,5 @@
 import React, {PureComponent} from "react"
+import axios from "axios"
 import MailSvg from "../../Media/SVG/MailSvg"
 import PhoneSvg from "../../Media/SVG/PhoneSvg"
 import TelegramSvg from "../../Media/SVG/TelegramSvg"
@@ -12,7 +13,9 @@ class ContactPage extends PureComponent
     {
         super(props)
 
-        this.state = {}
+        this.state = {
+            loading: false,
+        }
     }
 
     componentDidMount()
@@ -20,8 +23,41 @@ class ContactPage extends PureComponent
         window.scrollTo(0, 0)
     }
 
+    sendEmail = () =>
+    {
+        if (!this.state.loading)
+        {
+            let bodyFormData = new FormData()
+            let title = document.getElementById("title").value
+            let email = document.getElementById("email").value
+            let name = document.getElementById("name").value
+            let message = document.getElementById("message").value
+            bodyFormData.append("title", title)
+            bodyFormData.append("email", email)
+            bodyFormData.append("name", name)
+            bodyFormData.append("message", message)
+            this.setState({...this.state, loading: true}, () =>
+            {
+                axios.post(
+                    "https://script.google.com/macros/s/AKfycbwuycrF1yYVs-7kPYg3GqRSkRDjNqpIBhxQWaXxFGBJ59hzm5w/exec",
+                    bodyFormData,
+                    {headers: {"Content-Type": "multipart/form-data"}})
+                    .then(() =>
+                    {
+                        this.setState({...this.state, loading: false})
+                        alert("پیام شما با موفقیت ارسال شد")
+                    })
+                    .catch((error) =>
+                    {
+                        console.log(error)
+                    })
+            })
+        }
+    }
+
     render()
     {
+        const {loading} = this.state
         return (
             <React.Fragment>
                 <div className="contact-header">
@@ -32,13 +68,13 @@ class ContactPage extends PureComponent
                 </div>
                 <div className="contact-body">
                     <div className="contact-form">
-                        <input className="contact-input" placeholder="عنوان پیام"/>
-                        <input className="contact-input" placeholder="ایمیل شما"/>
-                        <input className="contact-input" placeholder="نام شما"/>
+                        <input id="name" name="name" className="contact-input" placeholder="نام شما"/>
+                        <input id="email" name="email" className="contact-input" placeholder="ایمیل شما"/>
+                        <input id="title" name="title" className="contact-input" placeholder="عنوان پیام"/>
                         <br/>
-                        <textarea className="contact-textarea" placeholder="متن پیام شما"/>
+                        <textarea id="message" name="message" className="contact-textarea" placeholder="متن پیام شما"/>
                         <br/>
-                        <div className="contact-send-button">
+                        <div className={loading ? "contact-send-button-inactive" : "contact-send-button"} onClick={this.sendEmail}>
                             ارسال پیام
                             <TelegramSvg className="contact-send-button-svg"/>
                         </div>

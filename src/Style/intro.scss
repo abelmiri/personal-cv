@@ -43,7 +43,7 @@
   top: -50vh;
   left: -300px;
   transform: rotate(-20deg) translateX(0);
-  animation: intro-background 40s ease 0s infinite;
+  animation: intro-background 15s ease 0s infinite;
 }
 
 @keyframes intro-background {
@@ -242,7 +242,7 @@
     flex-wrap: wrap;
   }
   .intro-animated-background {
-    opacity: 0;
+    display: none;
   }
   .intro-picture-container {
     width: 220px;

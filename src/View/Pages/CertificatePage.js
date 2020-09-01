@@ -89,7 +89,7 @@ class CertificatePage extends PureComponent
                         </div>
                     </div>
                     <div className="certificate-first-glance-description">
-                        <div>گواهینامه ها</div>
+                        <div>گواهینامه‌ها</div>
                         <div className="certificate-contents">
                             <div className="honor-item-container" data-tip="دریافت مدرک">
                                 <div className="certificate-item-svg-container">

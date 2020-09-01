@@ -179,6 +179,7 @@
   color: var(--font-color);
   transition-duration: $animation-time;
   direction: rtl;
+  width: 120px;
 
   &:focus {
     border: 1px solid var(--primary-color);
@@ -227,6 +228,35 @@
   &:hover {
     border: 1px solid var(--primary-color);
     background-color: var(--background-color);
+    color: var(--primary-color);
+    padding-left: 40px;
+    width: 120px;
+
+    .contact-send-button-svg {
+      opacity: 1;
+      transform: scaleX(-1) translateX(10px);
+    }
+  }
+}
+
+.contact-send-button-inactive {
+  padding: 10px;
+  border-radius: 30px;
+  background-color: var(--dark-color);
+  text-align: center;
+  cursor: not-allowed;
+  width: 150px;
+  font-size: 17px;
+  transition-duration: $animation-time;
+  border: 1px solid var(--background-color);
+  color: var(--font-color);
+  position: relative;
+  justify-self: flex-end;
+  margin: 0 5px;
+
+  &:hover {
+    border: 1px solid var(--dark-color);
+    background-color: var(--dark-color);
     color: var(--primary-color);
     padding-left: 40px;
     width: 120px;
