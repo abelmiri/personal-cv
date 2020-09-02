@@ -50,7 +50,7 @@ class WorkPage extends PureComponent
                                     </div>
                                     <div className="work-item-title">
                                         مشاور و مدیر پروژه
-                                        <span className="work-item-organization"> - شرکت خصوصی </span>
+                                        {/*<span className="work-item-organization"> - شرکت خصوصی </span>*/}
                                     </div>
                                     <div className="work-item-description">
                                         <div>سامانه هوشمند سازی پرداخت و شبکه تعاملی یکپارچه دانشگاه های استان</div>
@@ -72,7 +72,7 @@ class WorkPage extends PureComponent
                                     </div>
                                     <div className="work-item-title">
                                         راهنمایی و مشاوره پایان نامه
-                                        <span className="work-item-organization"> - شرکت خصوصی </span>
+                                        {/*<span className="work-item-organization"> - شرکت خصوصی </span>*/}
                                     </div>
                                     <div className="work-item-description">
                                         <div> سامانه جامع فرصت های سرمایه گذاری استان فروشگاه اینترنتی محصولات دیجیتال</div>

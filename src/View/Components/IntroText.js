@@ -17,6 +17,8 @@ import SkillSvg from "../../Media/SVG/SkillSvg"
 import CertificateShortSvg from "../../Media/SVG/CertificateShortSvg"
 import ProjectSvg from "../../Media/SVG/ProjectSvg"
 
+const backMediaAddress = "http://86.106.142.44:3010/media/"
+
 const IntroText = (props) =>
 {
     const {onSelect, OnHover} = props
@@ -29,7 +31,7 @@ const IntroText = (props) =>
                     <span className="intro-text-name"> احمد جنتی فرد </span>
                     هستم
                 </span>
-                <p className="intro-text-description">کارشناس ارشد کامپیوتر، کارشناس فناوری اطلاعات استانداری، مشاور و مدیر پروژه های تجاری و نرم افزاری، مدرس دروس تخصصی، برنامه نویسی و وب</p>
+                <p className="intro-text-description">کارشناس ارشد کامپیوتر، کارشناس فناوری اطلاعات استانداری، مشاور و مدیر پروژه های تجاری و نرم افزاری، مدرس دانشگاه و موسسات آموزش عالی.</p>
                 {/*<div className="intro-top-buttons-container">*/}
                 {/*    <div className="intro-more-about-button" onClick={() => onSelect("about")} onMouseOver={() => OnHover("about")} onMouseLeave={() => OnHover("")}>*/}
                 {/*        بیشتر درباره من*/}
@@ -43,10 +45,10 @@ const IntroText = (props) =>
                     <a href="https://www.instagram.com/AhmadJanatiFard" className="intro-info-detail-svg-wrapper">
                         <InstagramSvg className="intro-info-detail-svg"/>
                     </a>
-                    <div className="about-download-cv-button">
+                    <a href={backMediaAddress + "Resume (Ahmad Janati Fard).pdf"} className="about-download-cv-button">
                         دریافت فایل رزومه
                         <CvSvg className="about-download-cv-button-svg"/>
-                    </div>
+                    </a>
                     <a href="https://www.linkedin.com/in/Ahmad-Janati-Fard" className="intro-info-detail-svg-wrapper">
                         <LinkedinSvg className="intro-info-detail-svg"/>
                     </a>

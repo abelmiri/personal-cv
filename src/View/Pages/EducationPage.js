@@ -38,8 +38,8 @@ class EducationPage extends PureComponent
                                 <span className="certificate-item-date">مهر 1395 تا کنون</span>
                                 <br/>
                                 <div className="certificate-item-title">
-                                    طراحی وب
-                                    <span className="certificate-item-title-description"> - دانشگاه صنعتی سجاد مشهد</span>
+                                    دانشگاه صنعتی سجاد مشهد
+                                    {/*<span className="certificate-item-title-description"> - دانشگاه صنعتی سجاد مشهد</span>*/}
                                 </div>
                                 <div className="certificate-item-description">
                                     <CheckboxSvg className="education-description-svg"/>
@@ -57,8 +57,8 @@ class EducationPage extends PureComponent
                                 <span className="certificate-item-date">مهر 1394 تا کنون</span>
                                 <br/>
                                 <div className="certificate-item-title">
-                                    برنامه نویسی
-                                    <span className="certificate-item-title-description"> - دانشگاه فنی و حرفه ای استان</span>
+                                    دانشگاه فنی و حرفه ای استان
+                                    {/*<span className="certificate-item-title-description"> - دانشگاه فنی و حرفه ای استان</span>*/}
                                 </div>
                                 <div className="certificate-item-description">
                                     <CheckboxSvg className="education-description-svg"/>
@@ -86,8 +86,8 @@ class EducationPage extends PureComponent
                                 <span className="certificate-item-date">تیر 1395 تا 1398</span>
                                 <br/>
                                 <div className="certificate-item-title">
-                                    کارشناسی فناوری اطلاعات
-                                    <span className="certificate-item-title-description"> - ضمن خدمت کارکنان دولت</span>
+                                    مرکز آموزش ضمن خدمت کارکنان دولت
+                                    {/*<span className="certificate-item-title-description"> - ضمن خدمت کارکنان دولت</span>*/}
                                 </div>
                                 <div className="certificate-item-description">
                                     <CheckboxSvg className="education-description-svg"/>
@@ -118,8 +118,8 @@ class EducationPage extends PureComponent
                                 <span className="certificate-item-date">فروردین 1394 تا 1397</span>
                                 <br/>
                                 <div className="certificate-item-title">
-                                    فناوری اطلاعات
-                                    <span className="certificate-item-title-description"> - مراکز آموزش عالی و آموزشگاه های آزاد</span>
+                                    مراکز آموزش عالی و آموزشگاه های آزاد
+                                    {/*<span className="certificate-item-title-description"> - مراکز آموزش عالی و آموزشگاه های آزاد</span>*/}
                                 </div>
                                 <div className="certificate-item-description">
                                     <CheckboxSvg className="education-description-svg"/>
@@ -153,8 +153,8 @@ class EducationPage extends PureComponent
                                 <span className="certificate-item-date">تیر 1388 تا 1395</span>
                                 <br/>
                                 <div className="certificate-item-title">
-                                    طراحی و توسعه صفحات وب
-                                    <span className="certificate-item-title-description"> - اداره کل آموزش فنی و حرفه ای استان</span>
+                                    اداره کل آموزش فنی و حرفه ای استان
+                                    {/*<span className="certificate-item-title-description"> - اداره کل آموزش فنی و حرفه ای استان</span>*/}
                                 </div>
                                 <div className="certificate-item-description">
                                     <CheckboxSvg className="education-description-svg"/>

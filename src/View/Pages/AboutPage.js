@@ -29,15 +29,9 @@ class AboutPage extends PureComponent
                 <div className="about-first-glance">
                     <div className="about-first-glance-stats">
                         <div className="about-first-glance-box">
-                            +5
+                            +15
                             <div className="about-first-glance-box-title">
-                                عنوان مقاله و طرح پژوهشی
-                            </div>
-                        </div>
-                        <div className="about-first-glance-box">
-                            +10
-                            <div className="about-first-glance-box-title">
-                                سال آموزش
+                                عنوان پایان نامه دانشجویی
                             </div>
                         </div>
                         <div className="about-first-glance-box">
@@ -47,17 +41,29 @@ class AboutPage extends PureComponent
                             </div>
                         </div>
                         <div className="about-first-glance-box">
-                            +15
+                            +100
                             <div className="about-first-glance-box-title">
-                                عنوان پایان نامه دانشجویی
+                                تقدیرنامه و لوح سپاس
+                            </div>
+                        </div>
+                        <div className="about-first-glance-box">
+                            +50
+                            <div className="about-first-glance-box-title">
+                                مشاوره پروژه های تجاری
                             </div>
                         </div>
                     </div>
                     <div className="about-first-glance-stats">
                         <div className="about-first-glance-box">
-                            +20
+                            +10
                             <div className="about-first-glance-box-title">
-                                گواهینامه معتبر
+                                سال آموزش
+                            </div>
+                        </div>
+                        <div className="about-first-glance-box">
+                            +5
+                            <div className="about-first-glance-box-title">
+                                عنوان مقاله و طرح پژوهشی
                             </div>
                         </div>
                         <div className="about-first-glance-box">
@@ -67,15 +73,9 @@ class AboutPage extends PureComponent
                             </div>
                         </div>
                         <div className="about-first-glance-box">
-                            +50
+                            +20
                             <div className="about-first-glance-box-title">
-                                مشاوره پروژه های تجاری
-                            </div>
-                        </div>
-                        <div className="about-first-glance-box">
-                            +100
-                            <div className="about-first-glance-box-title">
-                                تقدیرنامه و لوح سپاس
+                                گواهینامه معتبر
                             </div>
                         </div>
                     </div>

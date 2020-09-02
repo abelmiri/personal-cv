@@ -29,7 +29,7 @@ class CertificatePage extends PureComponent
                 </div>
                 <div className="certificate-first-glance">
                     <div className="certificate-first-glance-description">
-                        <div>سوابق تحصیلات</div>
+                        <div>سوابق تحصیلی</div>
                         <div className="certificate-contents">
                             <div className="certificate-item-container active" data-tip="دریافت مدرک">
                                 <div className="certificate-item-svg-container">
@@ -208,7 +208,7 @@ class CertificatePage extends PureComponent
                                 <div className="certificate-item-title">
                                     همایش ملی فناوری اطلاعات و هوشمند سازی
                                 </div>
-                                <div className="certificate-item-description">جهاد دانشگاهی مشهد</div>
+                                <div className="certificate-item-description">استانداری خراسان رضوی</div>
                             </div>
                             <div className="honor-item-container" data-tip="دریافت مدرک">
                                 <div className="certificate-item-svg-container">
@@ -220,7 +220,7 @@ class CertificatePage extends PureComponent
                                 <div className="certificate-item-title">
                                     کنگره بین المللی نوآوری در مهندسی و توسعه تکنولوژی
                                 </div>
-                                <div className="certificate-item-description">جهاد دانشگاهی مشهد</div>
+                                <div className="certificate-item-description">دانشگاه تبریز</div>
                             </div>
                             <div className="honor-item-container" data-tip="دریافت مدرک">
                                 <div className="certificate-item-svg-container">

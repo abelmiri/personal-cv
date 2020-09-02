@@ -35,12 +35,14 @@ class App extends PureComponent
             {
                 devtoolsOpen = false
                 if (devtoolsOpen !== this.state.devtoolsOpen) this.setState({...this.state, devtoolsOpen})
-            }, 1000)
+            }, 500)
         }
         document.addEventListener("mousewheel", (e =>
         {
             const {selected} = this.state
-            if (document.body.scrollHeight === window.scrollY + window.innerHeight && e.wheelDelta < 0 && selected !== "contact")
+            console.log(document.body.scrollHeight)
+            console.log(window.scrollY + window.innerHeight)
+            if ((document.body.scrollHeight - (window.scrollY + window.innerHeight)) < 1 && e.wheelDelta < 0 && selected !== "contact")
                 this.setState({...this.state, selected: list[list.indexOf(selected) + 1], hovered: "", order: list.indexOf(selected) + 1})
             if (window.scrollY === 0 && e.wheelDelta > 0 && selected !== "intro")
                 this.setState({...this.state, selected: list[list.indexOf(selected) - 1], hovered: "", order: list.indexOf(selected) + 1})
