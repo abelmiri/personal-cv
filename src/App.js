@@ -25,6 +25,7 @@ class App extends PureComponent
 
     componentDidMount()
     {
+        const list = ["intro", "about", "certificate", "research", "education", "work", "gallery", "contact"]
         if (process.env.NODE_ENV === "production")
         {
             const element = new Image()
@@ -36,6 +37,14 @@ class App extends PureComponent
                 if (devtoolsOpen !== this.state.devtoolsOpen) this.setState({...this.state, devtoolsOpen})
             }, 1000)
         }
+        document.addEventListener("mousewheel", (e =>
+        {
+            const {selected} = this.state
+            if (document.body.scrollHeight === window.scrollY + window.innerHeight && e.wheelDelta < 0 && selected !== "contact")
+                this.setState({...this.state, selected: list[list.indexOf(selected) + 1], hovered: "", order: list.indexOf(selected) + 1})
+            if (window.scrollY === 0 && e.wheelDelta > 0 && selected !== "intro")
+                this.setState({...this.state, selected: list[list.indexOf(selected) - 1], hovered: "", order: list.indexOf(selected) + 1})
+        }))
     }
 
     select = (text) =>

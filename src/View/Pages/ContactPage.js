@@ -20,7 +20,7 @@ class ContactPage extends PureComponent
 
     componentDidMount()
     {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 10)
     }
 
     sendEmail = () =>
@@ -84,9 +84,10 @@ class ContactPage extends PureComponent
                             خجالتی نباش!
                         </div>
                         <div className="contact-info-description">
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                            دوست عزیزم، صمیمانه ممنونم ازینکه وقت با ارزشت رو به دیدن محتوای سایت من اختصاص دادی، من آماده‌ام تا در کمتر از یک روز به صحبت های شما (مشاوره، انتقاد، پیشنهاد، سوال و یا
+                            حتی گپ دوستانه) پاسخ بدم. ارادت همچنان باقیست...
                         </div>
-                        <a href="mailto:info@janatifard.com" className="contact-info-mail-phone-container">
+                        <a href="mailto:ahmad@janatifard.ir" className="contact-info-mail-phone-container">
                             <MailSvg className="contact-info-mail-phone-svg"/>
                             <div className="contact-info-mail-phone-text">
                                 <div className="title">رایانامه</div>

@@ -149,7 +149,7 @@
 
 .about-first-glance-box {
   width: 135px;
-  height: 125px;
+  height: 140px;
   border: 1px solid rgba(255, 255, 255, .1);
   border-radius: 5px;
   font-size: 50px;
@@ -161,7 +161,7 @@
 
 .about-first-glance-box-title {
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--font-color);
 }
 
@@ -216,6 +216,15 @@
   position: relative;
   border-radius: 30px;
   margin-top: 55px;
+}
+
+.about-skill-item-eng {
+  height: 22px;
+  background-color: var(--dark-color);
+  position: relative;
+  border-radius: 30px;
+  margin-top: 55px;
+  width: 100%;
 }
 
 @media (max-width: 1300px) {

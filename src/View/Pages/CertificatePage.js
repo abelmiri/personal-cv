@@ -14,7 +14,7 @@ class CertificatePage extends PureComponent
 
     componentDidMount()
     {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 10)
     }
 
     render()
@@ -31,20 +31,7 @@ class CertificatePage extends PureComponent
                     <div className="certificate-first-glance-description">
                         <div>سوابق تحصیلات</div>
                         <div className="certificate-contents">
-                            <div className="certificate-item-container active">
-                                <div className="certificate-item-svg-container">
-                                    <CertificateSvg className="certificate-item-svg"/>
-                                </div>
-                                <div className="certificate-gpa-date-container">
-                                    <div className="certificate-item-date">سال 1399 تا حالا</div>
-                                </div>
-                                <div className="certificate-item-title">
-                                    مهندسی نرم افزار - هوش مصنوعی
-                                </div>
-                                <div className="certificate-item-title-description"> دکتری</div>
-                                <div className="certificate-item-description">دانشگاه فردوسی مشهد</div>
-                            </div>
-                            <div className="certificate-item-container" data-tip="دریافت مدرک">
+                            <div className="certificate-item-container active" data-tip="دریافت مدرک">
                                 <div className="certificate-item-svg-container">
                                     <CertificateSvg className="certificate-item-svg"/>
                                 </div>
@@ -53,10 +40,10 @@ class CertificatePage extends PureComponent
                                     <div className="certificate-item-date">معدل 18.02</div>
                                 </div>
                                 <div className="certificate-item-title">
-                                    مهندسی نرم افزار - هوش مصنوعی
+                                    مهندسی کامپیوتر - هوش مصنوعی
                                 </div>
                                 <div className="certificate-item-title-description"> کارشناسی ارشد</div>
-                                <div className="certificate-item-description">دانشگاه غیرانتفاعی خیام مشهد</div>
+                                <div className="certificate-item-description">دانشگاه خیام مشهد</div>
                             </div>
                             <div className="certificate-item-container" data-tip="دریافت مدرک">
                                 <div className="certificate-item-svg-container">
@@ -67,10 +54,10 @@ class CertificatePage extends PureComponent
                                     <div className="certificate-item-date">معدل 17.44</div>
                                 </div>
                                 <div className="certificate-item-title">
-                                    مهندسی تکنولوژی نرم افزار
+                                    مهندسی کامپیوتر - نرم افزار
                                 </div>
                                 <div className="certificate-item-title-description"> کارشناسی</div>
-                                <div className="certificate-item-description">دانشگاه غیرانتفاعی سجاد مشهد</div>
+                                <div className="certificate-item-description">دانشگاه صنعتی سجاد مشهد</div>
                             </div>
                             <div className="certificate-item-container" data-tip="دریافت مدرک">
                                 <div className="certificate-item-svg-container">
@@ -210,6 +197,30 @@ class CertificatePage extends PureComponent
                                     مهندس برنامه نویس VB.NET (Web Application)
                                 </div>
                                 <div className="certificate-item-description">سازمان آموزش فنی و حرفه ای</div>
+                            </div>
+                            <div className="honor-item-container" data-tip="دریافت مدرک">
+                                <div className="certificate-item-svg-container">
+                                    <CertificateShortSvg className="certificate-item-svg"/>
+                                </div>
+                                <div className="certificate-gpa-date-container">
+                                    <div className="certificate-item-date">سال 1398</div>
+                                </div>
+                                <div className="certificate-item-title">
+                                    همایش ملی فناوری اطلاعات و هوشمند سازی
+                                </div>
+                                <div className="certificate-item-description">جهاد دانشگاهی مشهد</div>
+                            </div>
+                            <div className="honor-item-container" data-tip="دریافت مدرک">
+                                <div className="certificate-item-svg-container">
+                                    <CertificateShortSvg className="certificate-item-svg"/>
+                                </div>
+                                <div className="certificate-gpa-date-container">
+                                    <div className="certificate-item-date">سال 1395</div>
+                                </div>
+                                <div className="certificate-item-title">
+                                    کنگره بین المللی نوآوری در مهندسی و توسعه تکنولوژی
+                                </div>
+                                <div className="certificate-item-description">جهاد دانشگاهی مشهد</div>
                             </div>
                             <div className="honor-item-container" data-tip="دریافت مدرک">
                                 <div className="certificate-item-svg-container">

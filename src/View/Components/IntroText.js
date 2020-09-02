@@ -29,7 +29,7 @@ const IntroText = (props) =>
                     <span className="intro-text-name"> احمد جنتی فرد </span>
                     هستم
                 </span>
-                <p className="intro-text-description">کارشناس فناوری اطلاعات استانداری، مشاور و مدیر پروژه های تجاری و نرم افزاری، مدرس دروس تخصصی، برنامه نویسی و وب</p>
+                <p className="intro-text-description">کارشناس ارشد کامپیوتر، کارشناس فناوری اطلاعات استانداری، مشاور و مدیر پروژه های تجاری و نرم افزاری، مدرس دروس تخصصی، برنامه نویسی و وب</p>
                 {/*<div className="intro-top-buttons-container">*/}
                 {/*    <div className="intro-more-about-button" onClick={() => onSelect("about")} onMouseOver={() => OnHover("about")} onMouseLeave={() => OnHover("")}>*/}
                 {/*        بیشتر درباره من*/}

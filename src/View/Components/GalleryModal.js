@@ -1,37 +1,62 @@
 import React, {useState} from "react"
 import ArrowSvg from "../../Media/SVG/ArrowSvg"
 
+const backMediaAddress = "http://86.106.142.44:3010/media/"
+
 const GalleryModal = props =>
 {
     const [count, setCount] = useState(0)
-    const {pictures} = props
+    const [imageLoaded, setImageLoaded] = React.useState(false)
+    const {pictures, closeGallery} = props
+
+    document.addEventListener("keyup", (ev =>
+    {
+        if (imageLoaded)
+        {
+            if (ev.code === "ArrowRight") next()
+            if (ev.code === "ArrowLeft") previous()
+            if (ev.code === "Escape") closeGallery()
+        }
+    }))
 
     const next = e =>
     {
-        e.stopPropagation()
-        e.preventDefault()
-        count !== 0 ? setCount(count - 1) : setCount(pictures.length - 1)
+        if (pictures.length > 1)
+        {
+            e && e.stopPropagation()
+            e && e.preventDefault()
+            count !== 0 ? setCount(count - 1) : setCount(pictures.length - 1)
+            setImageLoaded(false)
+        }
     }
 
     const previous = e =>
     {
-        e.stopPropagation()
-        e.preventDefault()
-        count !== pictures.length - 1 ? setCount(count + 1) : setCount(0)
+        if (pictures.length > 1)
+        {
+            e && e.stopPropagation()
+            e && e.preventDefault()
+            count !== pictures.length - 1 ? setCount(count + 1) : setCount(0)
+            setImageLoaded(false)
+        }
     }
 
     return (
         <React.Fragment>
-            <div className="gallery-arrow-container previous" onClick={(e) => previous(e)}>
-                <ArrowSvg className="gallery-back-arrow"/>
-            </div>
-            <img className="gallery-modal-picture" src={pictures[count]} alt={count}/>
-            <div className="gallery-arrow-container next" onClick={(e) => next(e)}>
-                <ArrowSvg className="gallery-next-arrow"/>
-            </div>
-            <div className="gallery-modal-mobile">
-
-            </div>
+            {
+                pictures.length > 1 &&
+                <div className="gallery-arrow-container previous" onClick={(e) => previous(e)}>
+                    <ArrowSvg className="gallery-back-arrow"/>
+                </div>
+            }
+            <img className={`gallery-modal-picture smooth-image image-${imageLoaded ? "visible" : "hidden"}`}
+                 src={backMediaAddress + pictures[count]} alt={count} onLoad={() => setImageLoaded(true)}/>
+            {
+                pictures.length > 1 &&
+                <div className="gallery-arrow-container next" onClick={(e) => next(e)}>
+                    <ArrowSvg className="gallery-next-arrow"/>
+                </div>
+            }
         </React.Fragment>
     )
 }

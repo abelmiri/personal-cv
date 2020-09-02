@@ -1,13 +1,8 @@
 import React, {PureComponent} from "react"
-import n1 from "../../Media/Image/n1.png"
-import n2 from "../../Media/Image/n2.png"
-import n3 from "../../Media/Image/n3.png"
-import n4 from "../../Media/Image/n4.png"
-import n5 from "../../Media/Image/n5.png"
-import n6 from "../../Media/Image/n6.png"
 import GalleryItem from "../Components/GalleryItem"
 import GalleryModal from "../Components/GalleryModal"
 import ReactTooltip from "react-tooltip"
+import galleryList from "../../object"
 
 class GalleryPage extends PureComponent
 {
@@ -22,7 +17,7 @@ class GalleryPage extends PureComponent
 
     componentDidMount()
     {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 10)
     }
 
     showGallery = (items) =>
@@ -48,21 +43,17 @@ class GalleryPage extends PureComponent
                 </div>
                 <div className="gallery-wrapper">
                     <div className="gallery-item-container">
-                        <GalleryItem image={n1} gallery={[n1, n4, n5, n6]} showGallery={(items) => this.showGallery(items)}
-                                     title="اجرای طرح احراز اصالت هویت برخط در دستگاه های اجرایی"
-                                     description="مزایای اجرای این طرح: تکریم ارباب رجوع و افزایش رضایت شهروندان، کاهش چشمگیر استفاده از کاغذ و بایگانی فیزیکی"/>
-                        <GalleryItem image={n2} gallery={[n2, n4, n5, n6]} showGallery={(items) => this.showGallery(items)}
-                                     title="اجرای طرح احراز اصالت هویت برخط در دستگاه های اجرایی"
-                                     description="مزایای اجرای این طرح: تکریم ارباب رجوع و افزایش رضایت شهروندان، کاهش چشمگیر استفاده از کاغذ و بایگانی فیزیکی"/>
-                        <GalleryItem image={n3} gallery={[n3, n4, n5, n6]} showGallery={(items) => this.showGallery(items)}
-                                     title="اجرای طرح احراز اصالت هویت برخط در دستگاه های اجرایی"
-                                     description="مزایای اجرای این طرح: تکریم ارباب رجوع و افزایش رضایت شهروندان، کاهش چشمگیر استفاده از کاغذ و بایگانی فیزیکی"/>
+                        {
+                            Object.values(galleryList).map(p =>
+                                <GalleryItem image={p.gallery[0]} gallery={p.gallery} showGallery={(items) => this.showGallery(items)}
+                                             title={p.title} description={p.description} key={p.title}/>)
+                        }
                     </div>
                 </div>
                 {
                     gallery.length > 0 &&
                     <div className="galley-modal-container" onClick={this.closeGallery}>
-                        <GalleryModal pictures={gallery}/>
+                        <GalleryModal pictures={gallery} closeGallery={this.closeGallery}/>
                     </div>
                 }
                 <div className="galley-tooltip-container">

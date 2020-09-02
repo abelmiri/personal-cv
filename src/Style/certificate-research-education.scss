@@ -124,7 +124,7 @@
   margin: 35px 20px;
 
   &.active {
-    cursor: default !important;
+    //cursor: default !important;
 
     .certificate-item-title {
       color: var(--primary-color);
@@ -329,7 +329,7 @@
     padding-left: 15px;
 
     .work-item-date {
-      left: -150px;
+      left: -180px;
     }
   }
 
@@ -340,7 +340,7 @@
     padding-right: 15px;
 
     .work-item-date {
-      right: -150px;
+      right: -180px;
     }
   }
 
@@ -361,13 +361,13 @@
 
     &:nth-child(odd) {
       .work-item-date {
-        left: -180px;
+        left: -195px;
       }
     }
 
     &:nth-child(even) {
       .work-item-date {
-        right: -180px;
+        right: -195px;
       }
     }
   }
@@ -448,7 +448,7 @@
       padding-left: 7px;
 
       .work-item-date {
-        left: -120px;
+        left: -125px;
       }
     }
 
@@ -456,7 +456,7 @@
       padding-right: 7px;
 
       .work-item-date {
-        right: -120px;
+        right: -125px;
       }
     }
 
@@ -465,13 +465,13 @@
 
       &:nth-child(odd) {
         .work-item-date {
-          left: -125px;
+          left: -135px;
         }
       }
 
       &:nth-child(even) {
         .work-item-date {
-          right: -125px;
+          right: -135px;
         }
       }
     }

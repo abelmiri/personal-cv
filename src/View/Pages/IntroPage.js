@@ -13,7 +13,7 @@ class IntroPage extends PureComponent
 
     componentDidMount()
     {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 10)
     }
 
     render()

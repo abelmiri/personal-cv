@@ -11,7 +11,7 @@ class WorkPage extends PureComponent
 
     componentDidMount()
     {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 10)
     }
 
     render()
@@ -32,7 +32,7 @@ class WorkPage extends PureComponent
 
                                 <div className="work-item">
                                     <div className="work-item-date">
-                                        آبان 1396
+                                        سال 1396 تا کنون
                                     </div>
                                     <div className="work-item-title">
                                         کارشناس فناوری اطلاعات
@@ -46,36 +46,32 @@ class WorkPage extends PureComponent
 
                                 <div className="work-item">
                                     <div className="work-item-date">
-                                        تیر 1395
+                                        سال 1395 تا کنون
                                     </div>
                                     <div className="work-item-title">
-                                        مدیر آموزش
-                                        <span className="work-item-organization"> - پژوهشکده ثامن </span>
+                                        مشاور و مدیر پروژه
+                                        <span className="work-item-organization"> - شرکت خصوصی </span>
                                     </div>
                                     <div className="work-item-description">
-                                        <div> برگزاری دوره های تخصصی فناوری اطلاعات، شبکه، برنامه نویسی ویندوز و وب و موبایل (نمایندگی استان خراسان آزمایشگاه یادگیری لایتک دانشگاه صنعتی شریف)</div>
+                                        <div>سامانه هوشمند سازی پرداخت و شبکه تعاملی یکپارچه دانشگاه های استان</div>
+                                        <div>سامانه خرید و فروش اعتباری محصولات و شبکه پذیرندگان</div>
+                                        <div>سامانه آموزش مجازی پژوهشکده نوین شهر معنوی ثامن</div>
+                                        <div>سامانه تنظیم بازار گیاهان دارویی شرکت سپاد استان</div>
+                                        <div>سامانه برگزاری الکترونیک همایش ها و کنفرانس ها</div>
+                                        <div>سامانه تقسیم اسناد رسمی کانون سردفتران استان</div>
+                                        <div>سامانه جامع فرصت های سرمایه گذاری استان</div>
+                                        <div>سامانه تهیه و تولید محتوای آموزشی دیجیتال</div>
+                                        <div>سامانه مدیریت جلسات و رویدادهای استان</div>
+                                        <div>داشبورد جامع مدیریت شبکه دولت استان</div>
                                     </div>
                                 </div>
 
                                 <div className="work-item">
                                     <div className="work-item-date">
-                                        تیر 1394
+                                        سال 1395 تا کنون
                                     </div>
                                     <div className="work-item-title">
-                                        مدیر آموزش
-                                        <span className="work-item-organization"> - فناوران توسعه امن ناجی </span>
-                                    </div>
-                                    <div className="work-item-description">
-                                        <div>برگزاری دوره های تخصصی فناوری اطلاعات، شبکه، برنامه نویسی ویندوز و وب و موبایل (نمایندگی رسمی پلیس فتای نیروی انتظامی در استان خراسان رضوی)</div>
-                                    </div>
-                                </div>
-
-                                <div className="work-item">
-                                    <div className="work-item-date">
-                                        فروردین 1392
-                                    </div>
-                                    <div className="work-item-title">
-                                        مدیر پروژه
+                                        راهنمایی و مشاوره پایان نامه
                                         <span className="work-item-organization"> - شرکت خصوصی </span>
                                     </div>
                                     <div className="work-item-description">
@@ -89,6 +85,32 @@ class WorkPage extends PureComponent
                                         <div>سامانه پیش انتخاب واحد دانشگاه</div>
                                         <div>وب سایت مرکز رشد فناور دانشگاه</div>
                                         <div>داده کاوی و کاربردهای آن</div>
+                                    </div>
+                                </div>
+
+                                <div className="work-item">
+                                    <div className="work-item-date">
+                                        سال 1395 تا 1396
+                                    </div>
+                                    <div className="work-item-title">
+                                        مدیر آموزش
+                                        <span className="work-item-organization"> - پژوهشکده ثامن </span>
+                                    </div>
+                                    <div className="work-item-description">
+                                        <div> برگزاری دوره های تخصصی فناوری اطلاعات، شبکه، برنامه نویسی ویندوز و وب و موبایل (نمایندگی استان خراسان آزمایشگاه یادگیری لایتک دانشگاه صنعتی شریف)</div>
+                                    </div>
+                                </div>
+
+                                <div className="work-item">
+                                    <div className="work-item-date">
+                                        سال 1394 تا 1395
+                                    </div>
+                                    <div className="work-item-title">
+                                        مدیر آموزش
+                                        <span className="work-item-organization"> - فناوران توسعه امن ناجی </span>
+                                    </div>
+                                    <div className="work-item-description">
+                                        <div>برگزاری دوره های تخصصی فناوری اطلاعات، شبکه، برنامه نویسی ویندوز و وب و موبایل (نمایندگی رسمی پلیس فتای نیروی انتظامی در استان خراسان رضوی)</div>
                                     </div>
                                 </div>
 

@@ -13,7 +13,7 @@ class AboutPage extends PureComponent
 
     componentDidMount()
     {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 10)
     }
 
     render()
@@ -29,27 +29,27 @@ class AboutPage extends PureComponent
                 <div className="about-first-glance">
                     <div className="about-first-glance-stats">
                         <div className="about-first-glance-box">
-                            +20
+                            +5
                             <div className="about-first-glance-box-title">
-                                سال سابقه
+                                عنوان مقاله و طرح پژوهشی
                             </div>
                         </div>
                         <div className="about-first-glance-box">
-                            +150
+                            +10
                             <div className="about-first-glance-box-title">
-                                پروژه پایان یافته
+                                سال آموزش
                             </div>
                         </div>
                         <div className="about-first-glance-box">
-                            +65
+                            +12
                             <div className="about-first-glance-box-title">
-                                مدرک معتبر
+                                سال تجربه کاری
                             </div>
                         </div>
                         <div className="about-first-glance-box">
-                            +30
+                            +15
                             <div className="about-first-glance-box-title">
-                                مقاله
+                                عنوان پایان نامه دانشجویی
                             </div>
                         </div>
                     </div>
@@ -57,69 +57,28 @@ class AboutPage extends PureComponent
                         <div className="about-first-glance-box">
                             +20
                             <div className="about-first-glance-box-title">
-                                سال سابقه
-                            </div>
-                        </div>
-                        <div className="about-first-glance-box">
-                            +150
-                            <div className="about-first-glance-box-title">
-                                پروژه پایان یافته
-                            </div>
-                        </div>
-                        <div className="about-first-glance-box">
-                            +65
-                            <div className="about-first-glance-box-title">
-                                مدرک معتبر
+                                گواهینامه معتبر
                             </div>
                         </div>
                         <div className="about-first-glance-box">
                             +30
                             <div className="about-first-glance-box-title">
-                                مقاله
+                                عنوان کارگاه، سمینار و سخنرانی علمی
+                            </div>
+                        </div>
+                        <div className="about-first-glance-box">
+                            +50
+                            <div className="about-first-glance-box-title">
+                                مشاوره پروژه های تجاری
+                            </div>
+                        </div>
+                        <div className="about-first-glance-box">
+                            +100
+                            <div className="about-first-glance-box-title">
+                                تقدیرنامه و لوح سپاس
                             </div>
                         </div>
                     </div>
-                    {/*
-                    <div className="about-first-glance-description">
-                        <div>اطلاعات شخصی</div>
-                        <div className="about-first-glance-description-content">
-                            <div className="about-first-glance-description-content-side">
-                                <div className="about-first-glance-description-title">نام :&nbsp;</div>
-                                <div className="about-first-glance-description-value">احمد</div>
-                                <br/>
-                                <div className="about-first-glance-description-title">نام خانوادگی :&nbsp;</div>
-                                <div className="about-first-glance-description-value">جنتی فرد</div>
-                                <br/>
-                                <div className="about-first-glance-description-title">سن :&nbsp;</div>
-                                <div className="about-first-glance-description-value">30</div>
-                                <br/>
-                                <div className="about-first-glance-description-title">ملیت :&nbsp;</div>
-                                <div className="about-first-glance-description-value">ایرانی</div>
-                                <br/>
-                            </div>
-                            <div className="about-first-glance-description-content-side">
-                                <div className="about-first-glance-description-title">آدرس :&nbsp;</div>
-                                <div className="about-first-glance-description-value">مشهد</div>
-                                <br/>
-                                <div className="about-first-glance-description-title">شماره :&nbsp;</div>
-                                <div className="about-first-glance-description-value">09153008626</div>
-                                <br/>
-                                <div className="about-first-glance-description-title">ایمیل :&nbsp;</div>
-                                <div className="about-first-glance-description-value">info@janatifard.com</div>
-                                <br/>
-                                <div className="about-first-glance-description-title">زبان :&nbsp;</div>
-                                <div className="about-first-glance-description-value">فارسی، انگلیسی</div>
-                                <br/>
-                            </div>
-                        </div>
-                        <div className="about-download-cv-button-container">
-                            <div className="about-download-cv-button">
-                                دریافت فایل رزومه
-                                <CvSvg className="about-download-cv-button-svg"/>
-                            </div>
-                        </div>
-                    </div>
-*/}
                 </div>
                 <div className="about-separator-container">
                     <div className="about-separator"/>
@@ -133,11 +92,11 @@ class AboutPage extends PureComponent
                         </div>
                         <div className="about-skill-item">
                             <div className="about-skill-item-bar _100"/>
-                            <div className="about-skill-item-title">برنامه نویسی وب - ASP.NET MVC, ASP CORE, Entity Framework, AJAX</div>
+                            <div className="about-skill-item-title">برنامه نویسی وب - ASP.NET MVC, ASP CORE, Entity Framework</div>
                         </div>
                         <div className="about-skill-item">
                             <div className="about-skill-item-bar _100"/>
-                            <div className="about-skill-item-title">طراحی وب - HTML5, CSS3, JS, JQuery, Angular, Node, React, Meteor, TypeScript</div>
+                            <div className="about-skill-item-title">طراحی وب - HTML5, CSS3, JS, JQuery, Angular, Node, React, TypeScript</div>
                         </div>
                         <div className="about-skill-item">
                             <div className="about-skill-item-bar _80"/>
@@ -154,22 +113,22 @@ class AboutPage extends PureComponent
                     </div>
                     <div className="about-skill-title">زبان انگلیسی</div>
                     <div className="about-skills">
-                        <div className="about-skill-item">
+                        <div className="about-skill-item-eng">
                             <div className="about-skill-item-bar _80"/>
-                            <div className="about-skill-item-title">مهارت خواندن</div>
+                            <div className="about-skill-item-title">مهارت خواندن، نوشتن، شنیدار، گفتار</div>
                         </div>
-                        <div className="about-skill-item">
-                            <div className="about-skill-item-bar _80"/>
-                            <div className="about-skill-item-title">مهارت نوشتن</div>
-                        </div>
-                        <div className="about-skill-item">
-                            <div className="about-skill-item-bar _80"/>
-                            <div className="about-skill-item-title">مهارت شنیداری</div>
-                        </div>
-                        <div className="about-skill-item">
-                            <div className="about-skill-item-bar _80"/>
-                            <div className="about-skill-item-title">مهارت گفتاری</div>
-                        </div>
+                        {/*<div className="about-skill-item">*/}
+                        {/*    <div className="about-skill-item-bar _80"/>*/}
+                        {/*    <div className="about-skill-item-title">مهارت نوشتن</div>*/}
+                        {/*</div>*/}
+                        {/*<div className="about-skill-item">*/}
+                        {/*    <div className="about-skill-item-bar _80"/>*/}
+                        {/*    <div className="about-skill-item-title">مهارت شنیداری</div>*/}
+                        {/*</div>*/}
+                        {/*<div className="about-skill-item">*/}
+                        {/*    <div className="about-skill-item-bar _80"/>*/}
+                        {/*    <div className="about-skill-item-title">مهارت گفتاری</div>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
                 <div className="about-separator-container">
@@ -233,28 +192,28 @@ class AboutPage extends PureComponent
                                 آزمونگر تعیین سطح مربیگری دوره های پیشرفته کامپیوتر
                             </div>
                         </div>
-                        <div className="research-item-container">
-                            <div className="certificate-item-svg-container">
-                                <MedalSvg className="certificate-item-svg"/>
-                            </div>
-                            <div className="certificate-gpa-date-container">
-                                <div className="certificate-item-date">1398</div>
-                            </div>
-                            <div className="certificate-item-title">
-                                دریافت بیش از 10 لوح تقدیر از مقامات دولتی، مدیران کل دستگاه های اجرایی و رئوسای دانشگاه
-                            </div>
-                        </div>
-                        <div className="research-item-container">
-                            <div className="certificate-item-svg-container">
-                                <MedalSvg className="certificate-item-svg"/>
-                            </div>
-                            <div className="certificate-gpa-date-container">
-                                <div className="certificate-item-date">1398</div>
-                            </div>
-                            <div className="certificate-item-title">
-                                برگزاری بیش از 10 رویداد علمی و آموزشی (همایش، سمینار، کنفرانس و...)
-                            </div>
-                        </div>
+                        {/*<div className="research-item-container">*/}
+                        {/*    <div className="certificate-item-svg-container">*/}
+                        {/*        <MedalSvg className="certificate-item-svg"/>*/}
+                        {/*    </div>*/}
+                        {/*    <div className="certificate-gpa-date-container">*/}
+                        {/*        <div className="certificate-item-date">1398</div>*/}
+                        {/*    </div>*/}
+                        {/*    <div className="certificate-item-title">*/}
+                        {/*        دریافت بیش از 10 لوح تقدیر از مقامات دولتی، مدیران کل دستگاه های اجرایی و رئوسای دانشگاه*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="research-item-container">*/}
+                        {/*    <div className="certificate-item-svg-container">*/}
+                        {/*        <MedalSvg className="certificate-item-svg"/>*/}
+                        {/*    </div>*/}
+                        {/*    <div className="certificate-gpa-date-container">*/}
+                        {/*        <div className="certificate-item-date">1398</div>*/}
+                        {/*    </div>*/}
+                        {/*    <div className="certificate-item-title">*/}
+                        {/*        برگزاری بیش از 10 رویداد علمی و آموزشی (همایش، سمینار، کنفرانس و...)*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                         <div className="research-item-container">
                             <div className="certificate-item-svg-container">
                                 <MedalSvg className="certificate-item-svg"/>
@@ -278,33 +237,120 @@ class AboutPage extends PureComponent
                             <div className="certificate-item-svg-container">
                                 <AppreciationSvg className="certificate-item-svg"/>
                             </div>
-                            <div className="certificate-gpa-date-container">
-                                <div className="certificate-item-date">1392</div>
-                            </div>
                             <div className="certificate-item-title">
-                                انتخاب به عنوان سرباز نمونه کشوری در حوزه فناوری اطلاعات، نظم و انضباط اجتماعی
+                                استاندار محترم خراسان رضوی
                             </div>
                         </div>
                         <div className="research-item-container">
                             <div className="certificate-item-svg-container">
                                 <AppreciationSvg className="certificate-item-svg"/>
                             </div>
-                            <div className="certificate-gpa-date-container">
-                                <div className="certificate-item-date">1396</div>
-                            </div>
                             <div className="certificate-item-title">
-                                کارشناس داور المپیاد ملی مهارت در رشته فناوری اطلاعات و طراحی وب در مرحله استانی و شهرستانی
+                                رئیس مرکز توسعه دولت الکترونیک و فناوری اطلاعات وزارت کشور
                             </div>
                         </div>
                         <div className="research-item-container">
                             <div className="certificate-item-svg-container">
                                 <AppreciationSvg className="certificate-item-svg"/>
                             </div>
-                            <div className="certificate-gpa-date-container">
-                                <div className="certificate-item-date">1398</div>
+                            <div className="certificate-item-title">
+                                معاون نیروی انسانی نیروی انتظامی کشور
+                            </div>
+                        </div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <AppreciationSvg className="certificate-item-svg"/>
                             </div>
                             <div className="certificate-item-title">
-                                داور جشنواره دانشجویی دانشگاه فنی و حرفه ای کشور در زمینه تولیدات نرم افزاری و شبکه های مجازی
+                                معاون هماهنگی امور اقتصادی استانداری خراسان رضوی
+                            </div>
+                        </div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <AppreciationSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-item-title">
+                                معاون توسعه مدیریت و منابع استانداری خراسان رضوی
+                            </div>
+                        </div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <AppreciationSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-item-title">
+                                مدیر فناوری اطلاعات و شبکه دولت استان
+                            </div>
+                        </div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <AppreciationSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-item-title">
+                                رئیس نظام صنفی رایانه ای استان
+                            </div>
+                        </div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <AppreciationSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-item-title">
+                                رئیس پلیس فتا نیروی انتظامی استان
+                            </div>
+                        </div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <AppreciationSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-item-title">
+                                رئیس دانشگاه فنی و حرفه ای استان
+                            </div>
+                        </div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <AppreciationSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-item-title">
+                                رئیس دانشگاه آزاد اسلامی واحد مشهد
+                            </div>
+                        </div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <AppreciationSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-item-title">
+                                مدیرکل دفتر جذب و حمایت از سرمایه گذاری استان
+                            </div>
+                        </div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <AppreciationSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-item-title">
+                                مدیرکل دفتر برنامه ریزی نوسازی و تحول اداری استان
+                            </div>
+                        </div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <AppreciationSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-item-title">
+                                مدیرکل ورزش و جوانان استان
+                            </div>
+                        </div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <AppreciationSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-item-title">
+                                رئیس کانون سردفتران و دفتریاران استان
+                            </div>
+                        </div>
+                        <div className="research-item-container">
+                            <div className="certificate-item-svg-container">
+                                <AppreciationSvg className="certificate-item-svg"/>
+                            </div>
+                            <div className="certificate-item-title">
+                                مدیران عامل شرکت های بخش خصوصی فناوری اطلاعات استان
                             </div>
                         </div>
                     </div>

@@ -198,7 +198,7 @@
   resize: vertical;
   width: 100%;
   transition-duration: $animation-time;
-  height: 220px;
+  height: 265px;
   text-align: right;
   font-size: 14px;
   color: var(--font-color);
@@ -280,15 +280,21 @@
   transform: scaleX(-1) translateX(0);
 }
 
+@media (min-width: 1600px) and (max-width: 2000px) {
+  .contact-textarea {
+    height: 260px;
+  }
+}
+
 @media (min-width: 1300px) and (max-width: 1600px) {
   .contact-textarea {
-    height: 245px;
+    height: 300px;
   }
 }
 
 @media (max-width: 1300px) {
   .contact-textarea {
-    height: 195px;
+    height: 330px;
   }
 }
 
