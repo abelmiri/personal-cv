@@ -1,5 +1,6 @@
 import React, {useState} from "react"
 import ArrowSvg from "../../Media/SVG/ArrowSvg"
+import GalleryThumbnail from "./GalleryThumbnail"
 
 const backMediaAddress = "http://86.106.142.44:3010/media/"
 
@@ -19,7 +20,7 @@ const GalleryModal = props =>
         }
     }))
 
-    const next = e =>
+    const previous = e =>
     {
         if (pictures.length > 1)
         {
@@ -30,7 +31,7 @@ const GalleryModal = props =>
         }
     }
 
-    const previous = e =>
+    const next = e =>
     {
         if (pictures.length > 1)
         {
@@ -57,6 +58,7 @@ const GalleryModal = props =>
                     <ArrowSvg className="gallery-next-arrow"/>
                 </div>
             }
+            <GalleryThumbnail backMediaAddress={backMediaAddress} pictures={pictures} index={count} setIndex={setCount}/>
         </React.Fragment>
     )
 }
