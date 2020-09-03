@@ -348,12 +348,17 @@
   }
   .about-first-glance-box {
     width: 100px;
-    height: auto;
+    height: 80px;
     font-size: 30px;
-    padding: 10px 10px 15px 10px;
+    padding: 5px 8px 10px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
   }
   .about-first-glance-box-title {
-    font-size: 14px;
+    font-size: .37em;
   }
   .about-separator-container {
     margin: 20px 0 30px 0;

@@ -123,7 +123,7 @@ class EducationPage extends PureComponent
                                 </div>
                                 <div className="certificate-item-description">
                                     <CheckboxSvg className="education-description-svg"/>
-                                    آزمایشگاه یادگیری فناوری اطلاعات لایتک دانشگاه صنعتی شریف
+                                    آزمایشگاه فناوری اطلاعات لایتک دانشگاه صنعتی شریف
                                     <br/>
                                     <CheckboxSvg className="education-description-svg"/>
                                     مرکز آموزش های آزاد دانشگاه فردوسی مشهد
@@ -180,6 +180,49 @@ class EducationPage extends PureComponent
                                     <br/>
                                 </div>
                             </div>
+
+
+                            <div className="research-item-container">
+                                <div className="certificate-item-svg-container">
+                                    <EducationSvg className="certificate-item-svg"/>
+                                </div>
+                                <span className="certificate-item-date">مهر 1395 تا کنون</span>
+                                <br/>
+                                <div className="certificate-item-title">
+                                    سخنرانی علمی و آموزشی (کارگاه، سمینار، همایش)
+                                    {/*<span className="certificate-item-title-description"> - دانشگاه فنی و حرفه ای استان</span>*/}
+                                </div>
+                                <div className="certificate-item-description">
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    جایگاه وب در عرصه آموزش
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    بهینه سازی موتورهای جستجو
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    نفوذ و صدنفوذ (تست آسیب پذیری)
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    آینده وب، چالش ها و فرصت ها
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    آشنایی با تکنولوژی های مایکروسافت
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    کدنویسی حرفه ای و سریع
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    روش های نوین کسب درآمد اینترنتی
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    وب مدرن (تکنیک ها و ترفندها)
+                                    <br/>
+                                    <CheckboxSvg className="education-description-svg"/>
+                                    نظام اداری دولت الکترونیک
+                                    <br/>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>

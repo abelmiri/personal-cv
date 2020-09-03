@@ -49,7 +49,7 @@ class AboutPage extends PureComponent
                         <div className="about-first-glance-box">
                             +50
                             <div className="about-first-glance-box-title">
-                                مشاوره پروژه های تجاری
+                                مشاوره و اجرای پروژه های نرم افزاری
                             </div>
                         </div>
                     </div>

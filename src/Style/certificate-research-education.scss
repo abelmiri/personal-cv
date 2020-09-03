@@ -46,7 +46,7 @@
   opacity: .1;
   left: 50%;
   transform: translateX(-50%);
-  letter-spacing: -5px;
+  letter-spacing: 0;
   z-index: -1;
   width: 100%;
 }
@@ -58,6 +58,13 @@
 }
 
 .certificate-first-glance-description {
+  width: 60%;
+  direction: rtl;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.work-first-glance-description {
   width: 60%;
   direction: rtl;
   font-size: 24px;
@@ -428,6 +435,9 @@
   .certificate-first-glance-description {
     width: 90%;
   }
+  .work-first-glance-description {
+    width: 95%;
+  }
   .certificate-item-date {
     font-size: 11px;
   }
@@ -438,25 +448,38 @@
     padding: 5px 30px 8px 5px;
   }
   .work-item-container {
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .work-item {
-    margin: 0 -8px;
+    width: 100%;
+    margin: 0 0 15px 0;
     position: relative;
 
     &:nth-child(odd) {
-      padding-left: 7px;
+      padding: 0 0 50px 0;
+      border-left: none;
+      border-bottom: 2px solid var(--primary-color);
 
       .work-item-date {
-        left: -125px;
+        left: 50%;
+        top: calc(100% - 40px);
+        transform: translateY(0) translateX(-50%);
+        width: 80px;
+        text-align: center;
       }
     }
 
     &:nth-child(even) {
-      padding-right: 7px;
+      padding: 0 0 50px 0;
+      border-right: none;
+      border-bottom: 2px solid var(--primary-color);
 
       .work-item-date {
-        right: -125px;
+        right: 50%;
+        top: calc(100% - 40px);
+        transform: translateY(0) translateX(50%);
+        width: 80px;
+        text-align: center;
       }
     }
 
@@ -465,24 +488,31 @@
 
       &:nth-child(odd) {
         .work-item-date {
-          left: -135px;
+          left: 50%;
+          top: calc(100% - 40px);
+          transform: translateY(0) translateX(-50%);
+          width: 100px;
         }
       }
 
       &:nth-child(even) {
         .work-item-date {
-          right: -135px;
+          right: 50%;
+          top: calc(100% - 40px);
+          transform: translateY(0) translateX(50%);
+          width: 100px;
         }
       }
     }
   }
   .work-item-title {
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 8px;
     text-align: center;
+    font-weight: bold;
   }
   .work-item-organization {
-    font-size: 14px;
+    font-size: 13px;
   }
   .work-item-description {
     font-size: 12px;

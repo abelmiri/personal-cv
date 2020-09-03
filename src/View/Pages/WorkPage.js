@@ -25,7 +25,7 @@ class WorkPage extends PureComponent
                     </div>
                 </div>
                 <div className="certificate-first-glance">
-                    <div className="certificate-first-glance-description">
+                    <div className="work-first-glance-description">
                         <div>سوابق شغلی</div>
                         <div className="certificate-contents">
                             <div className="work-item-container">
@@ -39,8 +39,8 @@ class WorkPage extends PureComponent
                                         <span className="work-item-organization"> - استانداری خراسان رضوی </span>
                                     </div>
                                     <div className="work-item-description">
-                                        <div>کارشناس مسئول توسعه سرویس های دولتی</div>
                                         <div>کارشناس مسئول حوزه هوشمند سازی و کسب و کار</div>
+                                        <div>کارشناس مسئول توسعه سرویس های دولتی</div>
                                     </div>
                                 </div>
 
@@ -75,14 +75,14 @@ class WorkPage extends PureComponent
                                         {/*<span className="work-item-organization"> - شرکت خصوصی </span>*/}
                                     </div>
                                     <div className="work-item-description">
-                                        <div> سامانه جامع فرصت های سرمایه گذاری استان فروشگاه اینترنتی محصولات دیجیتال</div>
-                                        <div> فروشگاه اینترنتی میوه و سبزیجات فروشگاه اینترنتی محصولات دیجیتال</div>
+                                        <div> سامانه جامع فرصت های سرمایه گذاری استان</div>
                                         <div>سامانه جامع مشاغل و فارغ التحصیلان</div>
                                         <div>اتوماسیون یکپارچه نرم افزارهای شبکه</div>
                                         <div>سامانه جامع پرسش و پاسخ اینترنتی</div>
                                         <div> فروشگاه اینترنتی محصولات دیجیتال</div>
                                         <div>نرم افزار مدیریت املاک تحت شبکه</div>
                                         <div>سامانه پیش انتخاب واحد دانشگاه</div>
+                                        <div> فروشگاه اینترنتی میوه و سبزیجات</div>
                                         <div>وب سایت مرکز رشد فناور دانشگاه</div>
                                         <div>داده کاوی و کاربردهای آن</div>
                                     </div>
