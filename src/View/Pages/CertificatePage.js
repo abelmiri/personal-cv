@@ -5,13 +5,6 @@ import CertificateShortSvg from "../../Media/SVG/CertificateShortSvg"
 
 class CertificatePage extends PureComponent
 {
-    constructor(props)
-    {
-        super(props)
-
-        this.state = {}
-    }
-
     componentDidMount()
     {
         window.scrollTo(0, 10)

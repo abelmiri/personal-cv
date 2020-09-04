@@ -4,13 +4,6 @@ import IntroText from "../Components/IntroText"
 
 class IntroPage extends PureComponent
 {
-    constructor(props)
-    {
-        super(props)
-
-        this.state = {}
-    }
-
     componentDidMount()
     {
         window.scrollTo(0, 10)

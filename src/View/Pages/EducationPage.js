@@ -4,13 +4,6 @@ import CheckboxSvg from "../../Media/SVG/CheckboxSvg"
 
 class EducationPage extends PureComponent
 {
-    constructor(props)
-    {
-        super(props)
-
-        this.state = {}
-    }
-
     componentDidMount()
     {
         window.scrollTo(0, 10)
@@ -39,7 +32,6 @@ class EducationPage extends PureComponent
                                 <br/>
                                 <div className="certificate-item-title">
                                     دانشگاه صنعتی سجاد مشهد
-                                    {/*<span className="certificate-item-title-description"> - دانشگاه صنعتی سجاد مشهد</span>*/}
                                 </div>
                                 <div className="certificate-item-description">
                                     <CheckboxSvg className="education-description-svg"/>
@@ -58,7 +50,6 @@ class EducationPage extends PureComponent
                                 <br/>
                                 <div className="certificate-item-title">
                                     دانشگاه فنی و حرفه ای استان
-                                    {/*<span className="certificate-item-title-description"> - دانشگاه فنی و حرفه ای استان</span>*/}
                                 </div>
                                 <div className="certificate-item-description">
                                     <CheckboxSvg className="education-description-svg"/>
@@ -87,7 +78,6 @@ class EducationPage extends PureComponent
                                 <br/>
                                 <div className="certificate-item-title">
                                     مرکز آموزش ضمن خدمت کارکنان دولت
-                                    {/*<span className="certificate-item-title-description"> - ضمن خدمت کارکنان دولت</span>*/}
                                 </div>
                                 <div className="certificate-item-description">
                                     <CheckboxSvg className="education-description-svg"/>
@@ -119,7 +109,6 @@ class EducationPage extends PureComponent
                                 <br/>
                                 <div className="certificate-item-title">
                                     مراکز آموزش عالی و آموزشگاه های آزاد
-                                    {/*<span className="certificate-item-title-description"> - مراکز آموزش عالی و آموزشگاه های آزاد</span>*/}
                                 </div>
                                 <div className="certificate-item-description">
                                     <CheckboxSvg className="education-description-svg"/>
@@ -154,7 +143,6 @@ class EducationPage extends PureComponent
                                 <br/>
                                 <div className="certificate-item-title">
                                     اداره کل آموزش فنی و حرفه ای استان
-                                    {/*<span className="certificate-item-title-description"> - اداره کل آموزش فنی و حرفه ای استان</span>*/}
                                 </div>
                                 <div className="certificate-item-description">
                                     <CheckboxSvg className="education-description-svg"/>
@@ -190,7 +178,6 @@ class EducationPage extends PureComponent
                                 <br/>
                                 <div className="certificate-item-title">
                                     سخنرانی علمی و آموزشی (کارگاه، سمینار، همایش)
-                                    {/*<span className="certificate-item-title-description"> - دانشگاه فنی و حرفه ای استان</span>*/}
                                 </div>
                                 <div className="certificate-item-description">
                                     <CheckboxSvg className="education-description-svg"/>
@@ -222,7 +209,6 @@ class EducationPage extends PureComponent
                                     <br/>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>

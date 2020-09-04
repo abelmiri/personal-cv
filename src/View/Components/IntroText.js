@@ -32,12 +32,6 @@ const IntroText = (props) =>
                     هستم
                 </span>
                 <p className="intro-text-description">کارشناس ارشد کامپیوتر، کارشناس فناوری اطلاعات استانداری، مشاور و مدیر پروژه های تجاری و نرم افزاری، مدرس دانشگاه و موسسات آموزش عالی.</p>
-                {/*<div className="intro-top-buttons-container">*/}
-                {/*    <div className="intro-more-about-button" onClick={() => onSelect("about")} onMouseOver={() => OnHover("about")} onMouseLeave={() => OnHover("")}>*/}
-                {/*        بیشتر درباره من*/}
-                {/*        <UserSvg className="intro-more-about-button-svg"/>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
                 <div className="intro-info-svg-container">
                     <a href="https://telegram.me/AhmadJanatiFard" className="intro-info-detail-svg-wrapper">
                         <TelegramSvg className="intro-info-detail-svg telegram"/>

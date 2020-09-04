@@ -4,13 +4,6 @@ import AppreciationSvg from "../../Media/SVG/AppreciationSvg"
 
 class AboutPage extends PureComponent
 {
-    constructor(props)
-    {
-        super(props)
-
-        this.state = {}
-    }
-
     componentDidMount()
     {
         window.scrollTo(0, 10)
@@ -117,18 +110,6 @@ class AboutPage extends PureComponent
                             <div className="about-skill-item-bar _80"/>
                             <div className="about-skill-item-title">مهارت خواندن، نوشتن، شنیدار، گفتار</div>
                         </div>
-                        {/*<div className="about-skill-item">*/}
-                        {/*    <div className="about-skill-item-bar _80"/>*/}
-                        {/*    <div className="about-skill-item-title">مهارت نوشتن</div>*/}
-                        {/*</div>*/}
-                        {/*<div className="about-skill-item">*/}
-                        {/*    <div className="about-skill-item-bar _80"/>*/}
-                        {/*    <div className="about-skill-item-title">مهارت شنیداری</div>*/}
-                        {/*</div>*/}
-                        {/*<div className="about-skill-item">*/}
-                        {/*    <div className="about-skill-item-bar _80"/>*/}
-                        {/*    <div className="about-skill-item-title">مهارت گفتاری</div>*/}
-                        {/*</div>*/}
                     </div>
                 </div>
                 <div className="about-separator-container">
@@ -192,28 +173,6 @@ class AboutPage extends PureComponent
                                 آزمونگر تعیین سطح مربیگری دوره های پیشرفته کامپیوتر
                             </div>
                         </div>
-                        {/*<div className="research-item-container">*/}
-                        {/*    <div className="certificate-item-svg-container">*/}
-                        {/*        <MedalSvg className="certificate-item-svg"/>*/}
-                        {/*    </div>*/}
-                        {/*    <div className="certificate-gpa-date-container">*/}
-                        {/*        <div className="certificate-item-date">1398</div>*/}
-                        {/*    </div>*/}
-                        {/*    <div className="certificate-item-title">*/}
-                        {/*        دریافت بیش از 10 لوح تقدیر از مقامات دولتی، مدیران کل دستگاه های اجرایی و رئوسای دانشگاه*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
-                        {/*<div className="research-item-container">*/}
-                        {/*    <div className="certificate-item-svg-container">*/}
-                        {/*        <MedalSvg className="certificate-item-svg"/>*/}
-                        {/*    </div>*/}
-                        {/*    <div className="certificate-gpa-date-container">*/}
-                        {/*        <div className="certificate-item-date">1398</div>*/}
-                        {/*    </div>*/}
-                        {/*    <div className="certificate-item-title">*/}
-                        {/*        برگزاری بیش از 10 رویداد علمی و آموزشی (همایش، سمینار، کنفرانس و...)*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
                         <div className="research-item-container">
                             <div className="certificate-item-svg-container">
                                 <MedalSvg className="certificate-item-svg"/>
@@ -222,7 +181,7 @@ class AboutPage extends PureComponent
                                 <div className="certificate-item-date">1395</div>
                             </div>
                             <div className="certificate-item-title">
-                                کسب رتبه 80 کاردانی پیوسته و رتبه 30 کارشناسی ناپیوسته و 400 کارشناسی ارشد آزمون سراسری
+                                کسب رتبه ۸۸ کاردانی پیوسته، رتبه ۳۰ کارشناسی ناپیوسته، رتبه ۴۱۲ کارشناسی ارشد و رتبه ۸۴ دکتری تخصصی در آزمون سراسری سازمان سنجش آموزش کشور
                             </div>
                         </div>
                     </div>
@@ -278,7 +237,7 @@ class AboutPage extends PureComponent
                                 <AppreciationSvg className="certificate-item-svg"/>
                             </div>
                             <div className="certificate-item-title">
-                                مدیر فناوری اطلاعات و شبکه دولت استان
+                                مدیر فناوری اطلاعات و شبکه دولت استان خراسان رضوی
                             </div>
                         </div>
                         <div className="research-item-container">
@@ -286,7 +245,7 @@ class AboutPage extends PureComponent
                                 <AppreciationSvg className="certificate-item-svg"/>
                             </div>
                             <div className="certificate-item-title">
-                                رئیس نظام صنفی رایانه ای استان
+                                رئیس نظام صنفی رایانه ای استان خراسان رضوی
                             </div>
                         </div>
                         <div className="research-item-container">
@@ -294,7 +253,7 @@ class AboutPage extends PureComponent
                                 <AppreciationSvg className="certificate-item-svg"/>
                             </div>
                             <div className="certificate-item-title">
-                                رئیس پلیس فتا نیروی انتظامی استان
+                                رئیس پلیس فتا نیروی انتظامی استان خراسان رضوی
                             </div>
                         </div>
                         <div className="research-item-container">
@@ -302,7 +261,7 @@ class AboutPage extends PureComponent
                                 <AppreciationSvg className="certificate-item-svg"/>
                             </div>
                             <div className="certificate-item-title">
-                                رئیس دانشگاه فنی و حرفه ای استان
+                                رئیس دانشگاه فنی و حرفه ای استان خراسان رضوی
                             </div>
                         </div>
                         <div className="research-item-container">
@@ -318,7 +277,7 @@ class AboutPage extends PureComponent
                                 <AppreciationSvg className="certificate-item-svg"/>
                             </div>
                             <div className="certificate-item-title">
-                                مدیرکل دفتر جذب و حمایت از سرمایه گذاری استان
+                                مدیرکل دفتر جذب و حمایت از سرمایه گذاری استان خراسان رضوی
                             </div>
                         </div>
                         <div className="research-item-container">
@@ -326,7 +285,7 @@ class AboutPage extends PureComponent
                                 <AppreciationSvg className="certificate-item-svg"/>
                             </div>
                             <div className="certificate-item-title">
-                                مدیرکل دفتر برنامه ریزی نوسازی و تحول اداری استان
+                                مدیرکل دفتر برنامه ریزی نوسازی و تحول اداری استان خراسان رضوی
                             </div>
                         </div>
                         <div className="research-item-container">
@@ -334,7 +293,7 @@ class AboutPage extends PureComponent
                                 <AppreciationSvg className="certificate-item-svg"/>
                             </div>
                             <div className="certificate-item-title">
-                                مدیرکل ورزش و جوانان استان
+                                مدیرکل ورزش و جوانان استان خراسان رضوی
                             </div>
                         </div>
                         <div className="research-item-container">
@@ -342,7 +301,7 @@ class AboutPage extends PureComponent
                                 <AppreciationSvg className="certificate-item-svg"/>
                             </div>
                             <div className="certificate-item-title">
-                                رئیس کانون سردفتران و دفتریاران استان
+                                رئیس کانون سردفتران و دفتریاران استان خراسان رضوی
                             </div>
                         </div>
                         <div className="research-item-container">
@@ -350,7 +309,7 @@ class AboutPage extends PureComponent
                                 <AppreciationSvg className="certificate-item-svg"/>
                             </div>
                             <div className="certificate-item-title">
-                                مدیران عامل شرکت های بخش خصوصی فناوری اطلاعات استان
+                                مدیران عامل شرکت های بخش خصوصی فناوری اطلاعات استان خراسان رضوی
                             </div>
                         </div>
                     </div>
