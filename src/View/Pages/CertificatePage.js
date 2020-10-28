@@ -29,6 +29,20 @@ class CertificatePage extends PureComponent
                                     <CertificateSvg className="certificate-item-svg"/>
                                 </div>
                                 <div className="certificate-gpa-date-container">
+                                    <div className="certificate-item-date">سال 1399 تا اکنون</div>
+                                    {/*<div className="certificate-item-date">نامشخص</div>*/}
+                                </div>
+                                <div className="certificate-item-title">
+                                    مهندسی کامپیوتر - نرم افزار
+                                </div>
+                                <div className="certificate-item-title-description"> دکتری تخصصی</div>
+                                <div className="certificate-item-description">دانشگاه آزاد اسلامی مشهد</div>
+                            </div>
+                            <div className="certificate-item-container" data-tip="دریافت مدرک">
+                                <div className="certificate-item-svg-container">
+                                    <CertificateSvg className="certificate-item-svg"/>
+                                </div>
+                                <div className="certificate-gpa-date-container">
                                     <div className="certificate-item-date">سال 1393 تا 1395</div>
                                     <div className="certificate-item-date">معدل 18.02</div>
                                 </div>
@@ -64,7 +78,7 @@ class CertificatePage extends PureComponent
                                     تکنولوژی نرم افزار
                                 </div>
                                 <div className="certificate-item-title-description"> کاردانی</div>
-                                <div className="certificate-item-description">هنرستان فنی حرفه‌ای استان</div>
+                                <div className="certificate-item-description">دانشگاه فنی حرفه‌ای استان</div>
                             </div>
                         </div>
                     </div>

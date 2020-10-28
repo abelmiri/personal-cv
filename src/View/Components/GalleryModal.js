@@ -2,7 +2,8 @@ import React, {useState} from "react"
 import ArrowSvg from "../../Media/SVG/ArrowSvg"
 import GalleryThumbnail from "./GalleryThumbnail"
 
-const backMediaAddress = "http://86.106.142.44:3010/media/"
+// const backMediaAddress = "http://86.106.142.44:3010/media/"
+const backMediaAddress = "https://api.janatifard.ir/media/"
 
 const GalleryModal = props =>
 {

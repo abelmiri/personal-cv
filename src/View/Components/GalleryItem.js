@@ -1,6 +1,7 @@
 import React from "react"
 
-const backMediaAddress = "http://86.106.142.44:3010/media/"
+// const backMediaAddress = "http://86.106.142.44:3010/media/"
+const backMediaAddress = "https://api.janatifard.ir/media/"
 
 const GalleryItem = (props) =>
 {

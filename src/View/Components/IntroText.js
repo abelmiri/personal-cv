@@ -17,7 +17,8 @@ import SkillSvg from "../../Media/SVG/SkillSvg"
 import CertificateShortSvg from "../../Media/SVG/CertificateShortSvg"
 import ProjectSvg from "../../Media/SVG/ProjectSvg"
 
-const backMediaAddress = "http://86.106.142.44:3010/media/"
+// const backMediaAddress = "http://86.106.142.44:3010/media/"
+const backMediaAddress = "https://api.janatifard.ir/media/"
 
 const IntroText = (props) =>
 {
@@ -31,7 +32,7 @@ const IntroText = (props) =>
                     <span className="intro-text-name"> احمد جنتی فرد </span>
                     هستم
                 </span>
-                <p className="intro-text-description">کارشناس ارشد کامپیوتر، کارشناس فناوری اطلاعات استانداری، مشاور و مدیر پروژه های تجاری و نرم افزاری، مدرس دانشگاه و موسسات آموزش عالی.</p>
+                <p className="intro-text-description">دانشجوی دکتری تخصصی کامپیوتر، کارشناس ارشد هوش مصنوعی، کارشناس فناوری اطلاعات استانداری، مدرس دانشگاه و موسسات آموزش عالی، مشاور و مدیر پروژه های تجاری و نرم افزاری.</p>
                 <div className="intro-info-svg-container">
                     <a href="https://telegram.me/AhmadJanatiFard" className="intro-info-detail-svg-wrapper">
                         <TelegramSvg className="intro-info-detail-svg telegram"/>

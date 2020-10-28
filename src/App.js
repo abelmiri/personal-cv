@@ -33,8 +33,9 @@ class App extends PureComponent
             setInterval(() =>
             {
                 devtoolsOpen = false
+                console.log(element)
                 if (devtoolsOpen !== this.state.devtoolsOpen) this.setState({...this.state, devtoolsOpen})
-            }, 500)
+            }, 1000)
         }
         document.addEventListener("mousewheel", (e =>
         {
