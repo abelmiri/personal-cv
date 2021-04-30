@@ -1,0 +1,12 @@
+{
+  "name": "node_server",
+  "version": "1.0.0",
+  "description": "nodejs handle front of personal-cv",
+  "main": "index.js",
+  "author": "Abel Miri",
+  "license": "ISC",
+  "homepage": "https://janatifard.ir/",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

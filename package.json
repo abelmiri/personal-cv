@@ -1,7 +1,10 @@
 {
   "name": "personal-cv",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "front of personal-cv",
   "private": true,
+  "author": "Abel Miri",
+  "homepage": "https://janatifard.ir/",
   "dependencies": {
     "axios": "^0.20.0",
     "cra-template": "1.0.3",
